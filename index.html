@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Swap Rocket - Просто и выгодно обменять валюту</title>
+    <meta property="og:locale" content="ru_UA" />
+    <meta property="og:title" content="Swap Rocket | Просто и выгодно обменять валюту" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://swap-rocket.onrender.com/" />
+    <meta property="og:image" content="src/images/banner_og.png" />
+    <meta property="og:image:width" content="512px" />
+    <meta property="og:image:height" content="512px" />
+    <meta property="og:image:alt"
+        content="Сайт по поиску обменных пунктов рядом с вами и возможность забронировать нужную сумму" />
+    <meta property="og:description"
+        content="Сайт по поиску обменных пунктов рядом с вами и возможность забронировать нужную сумму." />
+    <meta property="og:site_name" content="swap-rocket.onrender.com" />
+
+</head>
+
+<body>
+    <div class="wrap-all">
+        <section class="exchange_currency_form">
+            <div class="container">
+
+                <div class="nav-bar">
+                    <a href="/" title="Главная страница"><img src="src/images/logo.png" alt="Swap Rocket"></a>
+                    <nav><a href="/login.html" target="_blank" title="Войти admin" class="login-link">Войти</a></nav>
+                </div>
+
+                <div class="flex-row">
+                    <div class="text-left">
+                        <h1>Просто и выгодно обменять валюту</h1>
+                        <p>Введите сумму которую хотите продать или купить и нажмите кнопку для поиска обменных пунктах
+                            рядом с вами</p>
+                    </div>
+                    <div class="main_form">
+                        <form>
+                            <nav class="tabs">
+                                <input type="radio" id="tab-buy" name="get-tab" value="buy" checked/>
+                                <label for="tab-buy" class="tab-buy active-tab">Купить</label>
+
+                                <input type="radio" id="tab-sell" name="get-tab" value="sell" />
+                                <label for="tab-sell" class="tab-sell">Продать</label>
+                            </nav>
+                            <select name="" id="">
+                                <option value="usd">USD</option>
+                                <option value="eur">EURO</option>
+                            </select>
+                            <input type="number" name="" placeholder="500" id="search-currency" min="50" max="1000000">
+                            <button type="submit">Найти где обменять</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="exchange_results" id="exchangers_results">
+            <div class="container flex-start">
+                <h2 id="title_results"></h2>
+                <div class="exchangers">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <script>document.write("&copy; 2022 - "+ new Date().getFullYear());</script>
+        </section>
+        <script src="src/main.js"></script>
+
+    </div>
+</body>
+
+</html>
