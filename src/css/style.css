@@ -165,6 +165,7 @@ button[type="submit"], .btn {
   backdrop-filter: blur(10px);
   top: -1px;
   transition: all 30ms ease-in-out;
+  cursor: pointer;
 }
 button[type="submit"]:active {
   /* background: rgba(81, 216, 111, 0.95);
@@ -202,7 +203,7 @@ button[type="submit"]:active {
   transition: all 200ms ease-in-out;
 }
 .item:hover{
-  background: hsl(260deg 75 10% / 100%);
+  background-color: rgb(255 204 0 / 15%);
   top: -2px;
 }
 .currency-data {
