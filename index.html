@@ -27,7 +27,10 @@
 
                 <div class="nav-bar">
                     <a href="/" title="Главная страница"><img src="src/images/logo.svg" alt="private-exchange"></a>
-                    <nav><a href="https://swap-rocket-currency-api.onrender.com/admin/" target="_blank" title="Войти admin" class="login-link">Войти</a></nav>
+                    <nav>
+                        <a href="viber://chat?number=%2B380634765088" target="_blank">Ссылка на чат Viber</a>
+                        <a href="https://wa.me/+380634765088" target="_blank">Чат с пользователем WhatsApp</a>
+                        <a href="https://swap-rocket-currency-api.onrender.com/admin/" target="_blank" title="Войти admin" class="login-link">Войти</a></nav>
                 </div>
 
                 <div class="flex-row">
@@ -45,7 +48,8 @@
                                 <label for="tab-sell" class="tab-sell">Продать</label>
                             </nav>
                             <select name="" id="">
-                                <option value="usd">USD - Доллар</option>
+                                <option value="USD - Білі долар">USD - Білі долар</option>
+                                <option value="USD - Сині долар">USD - Сині долар</option>
                                 <option value="eur">EUR - Евро</option>
                                 <option value="gbp">GBP - Фунт стерлингов</option>
                                  <option value="gbp">CHF - Швейцарский франк</option>
@@ -80,8 +84,25 @@
                 </div>
             </div>
         </section>
+
         <section class="footer">
-            <script>document.write("&copy; 2022 - "+ new Date().getFullYear());</script></section>
+
+            
+            <script>
+//                 fetch("http://127.0.0.1:8080/api/v1/orders/", {
+//                 method: "POST",
+//                 headers: {
+//                     "Content-Type": "application/json",
+//                     "Authorization": "ApiKey oooprya:qwe123"
+//                 },
+//                 body: JSON.stringify({ address_exchanger: "вулиця Успенська, 41", clients_telephone: "+380961234567", buy_or_sell: "Купить", exchange_rate: "42.00", order_sum: "500" })
+//             })
+//             .then(response => response.text())  // Проверяем текст ответа
+// .then(text => text ? JSON.parse(text) : {})
+//             .catch(error => console.error("Ошибка:", error));
+
+
+                document.write("&copy; 2022 - "+ new Date().getFullYear());</script></section>
         <script src="src/main.js"></script>
     </div>
 </body>
