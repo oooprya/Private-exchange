@@ -1,0 +1,306 @@
+<script setup>
+import exchange_currency_form from './components/exchangeCurrencyForm.vue'
+import TheWelcome from './components/TheWelcome.vue'
+</script>
+
+<template>
+  <div class="wrap-all">
+    <exchange_currency_form msg="Просто и выгодно обменять валюту" />
+  </div>
+</template>
+
+<style scoped>
+:root {
+  --linear-gradient: linear-gradient(to right,rgba(81, 216, 111, 0.8), rgba(81, 216, 111, 0.8));
+  --br: 2rem;
+  --color-brand: #FFCC00;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "e-Ukraine-Light";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/e-Ukraine-Light.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "e-Ukraine-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/e-Ukraine-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "e-Ukraine-Bold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/e-Ukraine-Bold.woff2") format("woff2");
+}
+
+body {
+  margin: 0;
+  font-family: "e-Ukraine-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  background-size: cover;
+  background-position: top center;
+  color: #f5f5f5;
+}
+h1 {
+  font-family: "e-Ukraine-Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+}
+h1 ~ p {
+  font-family: "e-Ukraine-Light";
+  font-size: 18px;
+  line-height: 1.4rem;
+  margin: 0 0 1rem 0;
+}
+.nav-bar {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.login-link {
+  border-radius: 10px;
+  border: 1px solid var( --color-brand);
+  background: var(--color-brand);
+  color: #000;
+  text-decoration: none;
+  padding: 0.588rem 1.976rem 0.6rem;
+}
+.container{
+  max-width: 960px;
+  margin-inline: auto;
+}
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.exchange_currency_form .flex-row {
+  min-height: 75vh;
+}
+.text-left {
+  flex: 0 0 450px;
+}
+.main_form {
+  position: relative;
+  flex: 0 0 330px;
+  border-radius: var(--br);
+  border: 1px solid var( --color-brand);
+  padding: 40px;
+  box-sizing: border-box;
+}
+.exchange_currency_form form , .card form {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+}
+nav.tabs, nav.currency-tabs {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  justify-content: center;
+}
+[class^="tab-"] {
+  padding: 0.4rem 1.4rem;
+  font-size: 15px;
+  margin: -3px 0;
+  cursor: pointer;
+}
+form [type="radio"] {
+  display: none;
+}
+.tabs input:checked + label, .currency-tabs .tab-sell{
+  border-radius: 0 0 15px 15px;
+  border: 1px solid var( --color-brand);
+  background: var( --color-brand);
+  color: #000;
+}
+select, input.input,
+#search-currency {
+  border-radius: 15px;
+  border: 1px solid var( --color-brand);
+  backdrop-filter: blur(5.089605808258057px);
+  background: transparent;
+  color: #fff;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+section option {
+  color: #fff;
+  background: #000;
+}
+section option:focus,
+section option:checked {
+  background: #000;
+}
+#search-currency {
+  margin: 10px 0 40px 0;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+}
+input.input {
+  margin: 10px 0 30px 0;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+}
+button[type="submit"], .btn {
+  position: relative;
+  width: 100%;
+  height: 58px;
+  flex-shrink: 0;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 1rem;
+  border: 1.527px solid var( --color-brand);
+  background: var( --color-brand);
+  box-shadow: 0px 5px 50px 4px rgb(0 49 15 / 30%);
+  backdrop-filter: blur(10px);
+  top: -1px;
+  transition: all 30ms ease-in-out;
+  cursor: pointer;
+}
+button[type="submit"]:active {
+
+  top: 0;
+}
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.exchange_results{
+  padding: 3rem 0;
+}
+.exchange_results h2{
+  max-width: 300px;
+  font-size: 35px;
+  color: #F5F5F5;
+  position: sticky;
+    top: 2rem;
+}
+.exchangers {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 30px;
+}
+.item {
+  position: relative;
+  border-radius: var(--br);
+  border: 0.1rem solid var( --color-brand);
+  padding: 30px;
+  transition: all 200ms ease-in-out;
+}
+.item:hover{
+  background-color: rgb(255 204 0 / 15%);
+  top: -2px;
+}
+.currency-data {
+  padding-top: 30px;
+}
+.currency-value {
+  color: #F5F5F5;
+  font-family: "e-Ukraine-Bold";
+  font-size: 32px;
+}
+.currency-sum {
+  color: #C0C0C0;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.wrap-icon {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+.icon-bg {
+  background: var(--linear-gradient);
+  border-radius: 15px;
+  padding: 15px;
+}
+.wrap-icon > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+section.footer {
+  padding: 1rem;
+  text-align: center;
+}
+@media (max-width: 959px) {
+.container {
+    padding: 0 2rem;
+}
+  .exchangers {
+    grid-template-columns: 300px;
+    gap: 30px;
+}
+}
+@media (max-width: 690px) {
+  .flex-start {
+    align-items: center;
+    flex-direction: column;
+}
+}
+@media (max-width: 568px) {
+  nav {
+    font-size: 15px;
+  }
+  .container {
+    padding: 0 1rem;
+}
+body{
+  backdrop-filter: blur(20px);
+  background-size: contain;
+}
+  .exchange_currency_form {
+    padding: 1.5rem;
+  }
+  .flex-row {
+    gap: 1rem;
+  }
+  h1 {
+    font-size: 7.5vw;
+  }
+  h1 ~ p {
+    font-size: 3vw;
+  }
+  .flex-row {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .text-left,
+  .main_form {
+    flex: 0;
+  }
+  .exchange_currency_form form {
+    margin: auto;
+  }
+  .main_form {
+    padding: 1rem;
+    padding-top: 3rem;
+    width: 100%;
+  }
+  .exchange_results h2 {
+    position: relative;
+  }
+}
+
+</style>

@@ -1,0 +1,70 @@
+Get http://localhost:8000/api/v1/orders/
+Content-Type: application/json
+
+###
+
+
+POST https://private-api-amk6.onrender.com/api/v1/orders/
+Content-Type: application/json
+Authorization: ApiKey oooprya:qwe123
+
+{
+      "address_exchanger": "вулиця Успенська, 41",
+      "buy_or_sell": "Купить",
+      "currency_name": "EUR - Евро",
+      "exchange_rate": "44.05",
+      "order_sum": 1555,
+      "clients_telephone": "+380960028195"
+    }
+
+###
+
+patch https://private-api-amk6.onrender.com/api/v1/currencys/62/
+Content-Type: application/json
+Authorization: ApiKey oooprya:qwe123
+
+{
+    "buy": "0.0960",
+    "sell": "0.1050"
+
+}
+
+###
+
+POST http://localhost:8000/api/v1/currency/
+Content-Type: application/json
+Authorization: ApiKey oooprya:muoi732vnjf2893vnnjsnfjs93u3
+
+{
+  "code": "sek",
+  "id": 15,
+  "name": "SEK - Шведская крона"
+}
+###
+
+
+POST http://localhost:8000/api/v1/currencys/
+Content-Type: application/json
+Authorization: ApiKey oooprya:muoi732vnjf2893vnnjsnfjs93u3
+
+{
+      "buy": "25.00",
+      "currency": "/api/v1/currency/1/",
+      "exchanger": "/api/v1/exchangers/1/",
+      "id": 1,
+      "sell": "26.00",
+      "sum": 5000
+    }
+
+###
+
+
+POST https://private-api-amk6.onrender.com/api/v1/exchangers/
+Content-Type: application/json
+Authorization: ApiKey oooprya:qwe123
+
+{
+    "id": 5,
+    "address": "вулиця Олексія Маркевича, 33",
+    "address_map": "https://maps.app.goo.gl/t9e5uvLYuSzwLYK58"
+}

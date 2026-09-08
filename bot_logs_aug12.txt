@@ -1,0 +1,1727 @@
+telegram_bot  | 2026-08-12T03:07:45.781980108Z 2026-08-12 06:07:45.781 | INFO     | functions.db_main:__init__:28 - Попытка подключения к базе: 85.238.113.16:5432
+telegram_bot  | 2026-08-12T03:07:45.795655769Z 2026-08-12 06:07:45.795 | ERROR    | functions.db_main:__init__:36 - Ошибка подключения: connection to server at "85.238.113.16", port 5432 failed: server closed the connection unexpectedly
+telegram_bot  | 2026-08-12T03:07:45.795671850Z 	This probably means the server terminated abnormally
+telegram_bot  | 2026-08-12T03:07:45.795675557Z 	before or while processing the request.
+telegram_bot  | 2026-08-12T03:07:45.795678252Z 
+telegram_bot  | 2026-08-12T03:07:45.795831186Z 2026-08-12 06:07:45.795 | ERROR    | functions.db_main:__init__:37 - Параметры подключения: {'host': '85.238.113.16', 'database': 'django_db', 'user': 'django_user', 'password': 'django_password', 'port': '5432'}
+telegram_bot  | 2026-08-12T03:07:45.795959323Z Traceback (most recent call last):
+telegram_bot  | 2026-08-12T03:07:45.796055288Z   File "/usr/src/app/functions/db_main.py", line 31, in __init__
+telegram_bot  | 2026-08-12T03:07:45.797689874Z     self.conn = psycopg2.connect(**connection_params)
+telegram_bot  | 2026-08-12T03:07:45.797950616Z   File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+telegram_bot  | 2026-08-12T03:07:45.798644431Z     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+telegram_bot  | 2026-08-12T03:07:45.798741187Z psycopg2.OperationalError: connection to server at "85.238.113.16", port 5432 failed: server closed the connection unexpectedly
+telegram_bot  | 2026-08-12T03:07:45.798747559Z 	This probably means the server terminated abnormally
+telegram_bot  | 2026-08-12T03:07:45.798751076Z 	before or while processing the request.
+telegram_bot  | 2026-08-12T03:07:45.798785372Z 
+telegram_bot  | 2026-08-12T03:07:45.798857020Z 
+telegram_bot  | 2026-08-12T03:07:45.798862401Z During handling of the above exception, another exception occurred:
+telegram_bot  | 2026-08-12T03:07:45.798866098Z 
+telegram_bot  | 2026-08-12T03:07:45.798897448Z Traceback (most recent call last):
+telegram_bot  | 2026-08-12T03:07:45.799230248Z   File "/usr/src/app/main.py", line 3, in <module>
+telegram_bot  | 2026-08-12T03:07:45.799410135Z     from config import TELEGRAM_TOKEN
+telegram_bot  | 2026-08-12T03:07:45.799447597Z   File "/usr/src/app/config.py", line 17, in <module>
+telegram_bot  | 2026-08-12T03:07:45.800860176Z     db = Database()
+telegram_bot  | 2026-08-12T03:07:45.800900984Z   File "/usr/src/app/functions/db_main.py", line 38, in __init__
+telegram_bot  | 2026-08-12T03:07:45.801122280Z     raise ConnectionError(
+telegram_bot  | 2026-08-12T03:07:45.801166124Z ConnectionError: Не удалось подключиться к базе данных: connection to server at "85.238.113.16", port 5432 failed: server closed the connection unexpectedly
+telegram_bot  | 2026-08-12T03:07:45.801208486Z 	This probably means the server terminated abnormally
+telegram_bot  | 2026-08-12T03:07:45.801212744Z 	before or while processing the request.
+telegram_bot  | 2026-08-12T03:07:45.801247090Z 
+telegram_bot  | 2026-08-12T03:07:47.058605396Z 2026-08-12 06:07:47.058 | INFO     | functions.db_main:__init__:28 - Попытка подключения к базе: 85.238.113.16:5432
+telegram_bot  | 2026-08-12T03:07:47.130338739Z 2026-08-12 06:07:47.130 | SUCCESS  | functions.db_main:__init__:34 - Успешное подключение к базе данных
+telegram_bot  | 2026-08-12T03:07:53.336792443Z INFO:aiogram.dispatcher:Start polling
+telegram_bot  | 2026-08-12T03:07:53.384537857Z INFO:aiogram.dispatcher:Run polling for bot @private_exchange_od_bot id=8097135106 - 'Exprivat'
+telegram_bot  | 2026-08-12T04:58:41.928318075Z 2026-08-12 07:58:41.927 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T04:58:41.928645341Z 🇺🇸/🇺🇦 USD: 44.80/44.90 білий 
+telegram_bot  | 2026-08-12T04:58:41.928652866Z 🇺🇸/🇺🇦 USD: 44.90/45.02 синій 💙 
+telegram_bot  | 2026-08-12T04:58:41.928656102Z 🇪🇺/🇺🇦 EUR: 51.80/51.90
+telegram_bot  | 2026-08-12T04:58:41.928658778Z 
+telegram_bot  | 2026-08-12T04:58:41.928661493Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T04:58:41.928664239Z 🇺🇸/🇪🇺 $/€: 1.1535/1.157 білий 
+telegram_bot  | 2026-08-12T04:58:41.928667044Z 🇺🇸/🇪🇺 $/€: 1.151/1.155 синий 💙
+telegram_bot  | 2026-08-12T04:58:41.928669819Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T04:58:41.928672475Z 🇺🇸/🇨🇭 $/₣: 1.226/1.235
+telegram_bot  | 2026-08-12T04:58:41.928675090Z  
+telegram_bot  | 2026-08-12T04:58:41.928677715Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T04:58:41.928680630Z 
+telegram_bot  | 2026-08-12T04:58:41.928683135Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T04:58:41.928685780Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T04:58:41.928688335Z 🇨🇭/🇺🇦 CHF: 55.05/55.40
+telegram_bot  | 2026-08-12T04:58:41.928690950Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T04:58:41.928693585Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T04:58:41.928696471Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T04:58:41.928699156Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T04:58:41.928701721Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T04:58:41.928713483Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T04:58:41.928716440Z 
+telegram_bot  | 2026-08-12T04:58:41.928719356Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T04:58:41.928722542Z                                                                             
+telegram_bot  | 2026-08-12T04:58:41.928725237Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T04:58:41.928728093Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T04:58:41.928730838Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T04:58:41.928739665Z                                                                          
+telegram_bot  | 2026-08-12T04:58:41.928743232Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T04:58:41.928746368Z 
+telegram_bot  | 2026-08-12T04:58:41.928748502Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T04:58:41.928751808Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T04:58:41.928754784Z 
+telegram_bot  | 2026-08-12T04:58:41.928757920Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T04:58:41.928761377Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T04:58:41.984765064Z 2026-08-12 07:58:41.984 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.80/44.90
+telegram_bot  | 2026-08-12T04:58:41.984980924Z 2026-08-12 07:58:41.984 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.80/44.90
+telegram_bot  | 2026-08-12T04:58:41.985175241Z 2026-08-12 07:58:41.985 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.80/44.90
+telegram_bot  | 2026-08-12T04:58:41.985365259Z 2026-08-12 07:58:41.985 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.60 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.60 / 44.90</b> білий
+telegram_bot  | 2026-08-12T04:58:41.985372634Z 
+telegram_bot  | 2026-08-12T04:58:41.985538255Z 2026-08-12 07:58:41.985 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.60/44.90
+telegram_bot  | 2026-08-12T04:58:41.985722454Z 2026-08-12 07:58:41.985 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.80/44.90
+telegram_bot  | 2026-08-12T04:58:41.985892694Z 2026-08-12 07:58:41.985 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.80/44.90
+telegram_bot  | 2026-08-12T04:58:41.986062975Z 2026-08-12 07:58:41.985 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.80/44.90
+telegram_bot  | 2026-08-12T04:58:41.986265829Z 2026-08-12 07:58:41.986 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T04:58:41.986272852Z 
+telegram_bot  | 2026-08-12T04:58:41.986463413Z 2026-08-12 07:58:41.986 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T04:58:41.986470026Z 
+telegram_bot  | 2026-08-12T04:58:41.986472380Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T04:58:41.986474845Z 
+telegram_bot  | 2026-08-12T04:58:41.986670264Z 2026-08-12 07:58:41.986 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T04:58:41.986677067Z 
+telegram_bot  | 2026-08-12T04:58:41.986867478Z 2026-08-12 07:58:41.986 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T04:58:41.986880773Z 
+telegram_bot  | 2026-08-12T04:58:41.987068267Z 2026-08-12 07:58:41.986 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T04:58:41.987074791Z 
+telegram_bot  | 2026-08-12T04:58:41.987275450Z 2026-08-12 07:58:41.987 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T04:58:41.987282133Z 
+telegram_bot  | 2026-08-12T04:58:41.987469206Z 2026-08-12 07:58:41.987 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T04:58:41.987475469Z 
+telegram_bot  | 2026-08-12T04:58:41.987673884Z 2026-08-12 07:58:41.987 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T04:58:41.987680597Z 
+telegram_bot  | 2026-08-12T04:58:41.987867119Z 2026-08-12 07:58:41.987 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T04:58:41.987873392Z 
+telegram_bot  | 2026-08-12T04:58:41.988076746Z 2026-08-12 07:58:41.987 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T04:58:41.988083058Z 
+telegram_bot  | 2026-08-12T04:58:41.988435243Z 2026-08-12 07:58:41.988 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T04:58:41.988441836Z 
+telegram_bot  | 2026-08-12T04:58:41.988632516Z 2026-08-12 07:58:41.988 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T04:58:41.988655099Z 
+telegram_bot  | 2026-08-12T04:58:41.988657524Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T04:58:41.988659888Z 
+telegram_bot  | 2026-08-12T04:58:42.619529002Z INFO:aiogram.event:Update id=81060021 is handled. Duration 691 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T05:00:20.206546771Z INFO:aiogram.event:Update id=81060022 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T05:36:39.423542518Z 2026-08-12 08:36:39.423 | INFO     | handlers:echo_handler:435 - доброе утро
+telegram_bot  | 2026-08-12T05:36:39.423579279Z бунина
+telegram_bot  | 2026-08-12T05:36:39.423583106Z 8000$ синие по 44.90 купить,
+telegram_bot  | 2026-08-12T05:36:39.423586423Z 26130 шекелей по 13.70 продать
+telegram_bot  | 2026-08-12T05:36:39.423875625Z INFO:aiogram.event:Update id=81060023 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T05:51:09.925503588Z 2026-08-12 08:51:09.924 | DEBUG    | handlers:channel_handler:405 - 
+telegram_bot  | 2026-08-12T05:51:09.926127971Z INFO:aiogram.event:Update id=81060024 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:00:32.812207076Z 2026-08-12 09:00:32.811 | INFO     | handlers:echo_handler:435 - доброе утро
+telegram_bot  | 2026-08-12T06:00:32.812253927Z ок
+telegram_bot  | 2026-08-12T06:00:32.812495617Z INFO:aiogram.event:Update id=81060025 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:10:55.616460572Z 2026-08-12 09:10:55.616 | INFO     | handlers:echo_handler:435 - доброе утро
+telegram_bot  | 2026-08-12T06:10:55.616756868Z INFO:aiogram.event:Update id=81060026 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:11:06.909375512Z 2026-08-12 09:11:06.909 | INFO     | handlers:echo_handler:435 - доброе утро
+telegram_bot  | 2026-08-12T06:11:06.909838963Z INFO:aiogram.event:Update id=81060027 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:11:12.148281576Z 2026-08-12 09:11:12.147 | INFO     | handlers:echo_handler:435 - доброе утро
+telegram_bot  | 2026-08-12T06:11:12.148977819Z INFO:aiogram.event:Update id=81060028 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:11:16.440289001Z 2026-08-12 09:11:16.439 | INFO     | handlers:echo_handler:435 - говорят закрыты жалюзи
+telegram_bot  | 2026-08-12T06:11:16.440316614Z INFO:aiogram.event:Update id=81060029 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:11:39.027470259Z 2026-08-12 09:11:39.027 | INFO     | handlers:echo_handler:435 - сейчас откроем. забыли
+telegram_bot  | 2026-08-12T06:11:39.027842653Z INFO:aiogram.event:Update id=81060030 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:11:53.444549447Z 2026-08-12 09:11:53.444 | INFO     | handlers:echo_handler:435 - 500€ по 51.80 купить, луиза
+telegram_bot  | 2026-08-12T06:11:53.444850252Z INFO:aiogram.event:Update id=81060031 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:12:56.620785336Z 2026-08-12 09:12:56.620 | INFO     | handlers:echo_handler:435 - купила
+telegram_bot  | 2026-08-12T06:12:56.620806176Z INFO:aiogram.event:Update id=81060032 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:51:28.147982603Z 2026-08-12 09:51:28.147 | DEBUG    | handlers:start_handler:59 - Вы успешно зарегистрированы!
+telegram_bot  | 2026-08-12T06:51:28.313985237Z INFO:aiogram.event:Update id=81060033 is handled. Duration 174 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:51:37.437846905Z INFO:aiogram.event:Update id=81060034 is handled. Duration 145 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:51:41.879243442Z 2026-08-12 09:51:41.879 | DEBUG    | handlers:callbacks_all_trip:114 - getarmor_546384593
+telegram_bot  | 2026-08-12T06:51:41.879516774Z 2026-08-12 09:51:41.879 | INFO     | handlers:callbacks_all_trip:181 - id=546384593 is_bot=False first_name='Руслан' last_name='Ширінга' username='shyringa76' language_code='uk' is_premium=None added_to_attachment_menu=None can_join_groups=None can_read_all_group_messages=None supports_inline_queries=None can_connect_to_business=None has_main_web_app=None
+telegram_bot  | 2026-08-12T06:51:41.880138274Z 2026-08-12 09:51:41.880 | DEBUG    | handlers:callbacks_all_trip:187 - (84, '546384593', 'shyringa76', 'client', '380506457878')
+telegram_bot  | 2026-08-12T06:51:41.881563318Z 2026-08-12 09:51:41.881 | DEBUG    | handlers:callbacks_all_trip:190 - [(175, 'new', '380506457878', 'вул. Героїв Крут, 17', 'USD - Новий', 'купівля', Decimal('44.9200'), 1000, datetime.datetime(2026, 8, 12, 6, 49, 5, 100660, tzinfo=datetime.timezone.utc))]
+telegram_bot  | 2026-08-12T06:51:41.881765722Z 2026-08-12 09:51:41.881 | DEBUG    | handlers:callbacks_all_trip:198 - Ви отримаєте на руки 44920.0000
+telegram_bot  | 2026-08-12T06:51:41.958206663Z INFO:aiogram.event:Update id=81060035 is handled. Duration 79 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:55:02.532445862Z 2026-08-12 09:55:02.532 | INFO     | handlers:echo_handler:435 - +1000 син*44.90
+telegram_bot  | 2026-08-12T06:55:02.532862352Z 2026-08-12 09:55:02.532 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=1000, currency=usdnew, rate=44.9
+telegram_bot  | 2026-08-12T06:55:02.766158095Z 2026-08-12 09:55:02.765 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная покупка
+telegram_bot  | 2026-08-12T06:55:02.766608962Z INFO:aiogram.event:Update id=81060036 is handled. Duration 235 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:55:32.307601328Z 2026-08-12 09:55:32.307 | INFO     | handlers:echo_handler:435 - +900 евро*51.20
+telegram_bot  | 2026-08-12T06:55:32.307985887Z 2026-08-12 09:55:32.307 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=900, currency=eur, rate=51.2
+telegram_bot  | 2026-08-12T06:55:32.409210709Z 2026-08-12 09:55:32.408 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная покупка
+telegram_bot  | 2026-08-12T06:55:32.409527305Z INFO:aiogram.event:Update id=81060037 is handled. Duration 103 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T06:55:42.151465622Z 2026-08-12 09:55:42.151 | INFO     | handlers:echo_handler:435 - -2000 син*45.10
+telegram_bot  | 2026-08-12T06:55:42.151754544Z 2026-08-12 09:55:42.151 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=-2000, currency=usdnew, rate=45.1
+telegram_bot  | 2026-08-12T06:55:42.231353240Z 2026-08-12 09:55:42.231 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная продажа
+telegram_bot  | 2026-08-12T06:55:42.231726366Z INFO:aiogram.event:Update id=81060038 is handled. Duration 81 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T07:09:45.912753465Z 2026-08-12 10:09:45.911 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T07:09:45.912776880Z 🇺🇸/🇺🇦 USD: 44.80/44.90 білий 
+telegram_bot  | 2026-08-12T07:09:45.912781148Z 🇺🇸/🇺🇦 USD: 44.90/45.02 синій 💙 
+telegram_bot  | 2026-08-12T07:09:45.912784725Z 🇪🇺/🇺🇦 EUR: 51.80/51.90
+telegram_bot  | 2026-08-12T07:09:45.912788081Z 
+telegram_bot  | 2026-08-12T07:09:45.912791368Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T07:09:45.912819092Z 🇺🇸/🇪🇺 $/€: 1.1535/1.157 білий 
+telegram_bot  | 2026-08-12T07:09:45.912822429Z 🇺🇸/🇪🇺 $/€: 1.151/1.155 синий 💙
+telegram_bot  | 2026-08-12T07:09:45.912825905Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T07:09:45.912829312Z 🇺🇸/🇨🇭 $/₣: 1.226/1.235
+telegram_bot  | 2026-08-12T07:09:45.912832588Z  
+telegram_bot  | 2026-08-12T07:09:45.912835724Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T07:09:45.912839161Z 
+telegram_bot  | 2026-08-12T07:09:45.912842387Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T07:09:45.912845633Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T07:09:45.912848780Z 🇨🇭/🇺🇦 CHF: 55.05/55.40
+telegram_bot  | 2026-08-12T07:09:45.912851826Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T07:09:45.912865613Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T07:09:45.912868588Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T07:09:45.912871584Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T07:09:45.912874279Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T07:09:45.912876995Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T07:09:45.912879740Z 
+telegram_bot  | 2026-08-12T07:09:45.912910590Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T07:09:45.912914337Z                                                                             
+telegram_bot  | 2026-08-12T07:09:45.912917203Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T07:09:45.912920259Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T07:09:45.912923164Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T07:09:45.912926130Z                                                                          
+telegram_bot  | 2026-08-12T07:09:45.912930128Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T07:09:45.912934116Z 
+telegram_bot  | 2026-08-12T07:09:45.912936660Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T07:09:45.912939616Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T07:09:45.912942462Z 
+telegram_bot  | 2026-08-12T07:09:45.912945007Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T07:09:45.912947873Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T07:09:45.974195344Z 2026-08-12 10:09:45.974 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.80/44.90
+telegram_bot  | 2026-08-12T07:09:45.974423287Z 2026-08-12 10:09:45.974 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.80/44.90
+telegram_bot  | 2026-08-12T07:09:45.974604109Z 2026-08-12 10:09:45.974 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.80/44.90
+telegram_bot  | 2026-08-12T07:09:45.974805661Z 2026-08-12 10:09:45.974 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.60 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.60 / 44.90</b> білий
+telegram_bot  | 2026-08-12T07:09:45.974813156Z 
+telegram_bot  | 2026-08-12T07:09:45.974984288Z 2026-08-12 10:09:45.974 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.60/44.90
+telegram_bot  | 2026-08-12T07:09:45.975172154Z 2026-08-12 10:09:45.975 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.80/44.90
+telegram_bot  | 2026-08-12T07:09:45.975387683Z 2026-08-12 10:09:45.975 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.80/44.90
+telegram_bot  | 2026-08-12T07:09:45.976002338Z 2026-08-12 10:09:45.975 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.80/44.90
+telegram_bot  | 2026-08-12T07:09:45.976215403Z 2026-08-12 10:09:45.976 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T07:09:45.976223840Z 
+telegram_bot  | 2026-08-12T07:09:45.976429149Z 2026-08-12 10:09:45.976 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T07:09:45.976436623Z 
+telegram_bot  | 2026-08-12T07:09:45.976439048Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T07:09:45.976441553Z 
+telegram_bot  | 2026-08-12T07:09:45.976633446Z 2026-08-12 10:09:45.976 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T07:09:45.976657433Z 
+telegram_bot  | 2026-08-12T07:09:45.976856049Z 2026-08-12 10:09:45.976 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T07:09:45.976862612Z 
+telegram_bot  | 2026-08-12T07:09:45.977061799Z 2026-08-12 10:09:45.976 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T07:09:45.977068623Z 
+telegram_bot  | 2026-08-12T07:09:45.977280334Z 2026-08-12 10:09:45.977 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T07:09:45.977287518Z 
+telegram_bot  | 2026-08-12T07:09:45.977480243Z 2026-08-12 10:09:45.977 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T07:09:45.977486666Z 
+telegram_bot  | 2026-08-12T07:09:45.977677907Z 2026-08-12 10:09:45.977 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T07:09:45.977684691Z 
+telegram_bot  | 2026-08-12T07:09:45.977877366Z 2026-08-12 10:09:45.977 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T07:09:45.977883678Z 
+telegram_bot  | 2026-08-12T07:09:45.978094368Z 2026-08-12 10:09:45.978 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T07:09:45.978100900Z 
+telegram_bot  | 2026-08-12T07:09:45.978485268Z 2026-08-12 10:09:45.978 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T07:09:45.978492492Z 
+telegram_bot  | 2026-08-12T07:09:45.978683674Z 2026-08-12 10:09:45.978 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T07:09:45.978696148Z 
+telegram_bot  | 2026-08-12T07:09:45.978698903Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T07:09:45.978701288Z 
+telegram_bot  | 2026-08-12T07:09:46.458858830Z INFO:aiogram.event:Update id=81060039 is handled. Duration 547 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T07:18:49.770744671Z 2026-08-12 10:18:49.770 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T07:18:49.770778938Z 🇺🇸/🇺🇦 USD: 44.82/44.90 білий 
+telegram_bot  | 2026-08-12T07:18:49.770796161Z 🇺🇸/🇺🇦 USD: 44.92/45.02 синій 💙 
+telegram_bot  | 2026-08-12T07:18:49.770799207Z 🇪🇺/🇺🇦 EUR: 51.80/51.90
+telegram_bot  | 2026-08-12T07:18:49.770801883Z 
+telegram_bot  | 2026-08-12T07:18:49.770804458Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T07:18:49.770807123Z 🇺🇸/🇪🇺 $/€: 1.1535/1.157 білий 
+telegram_bot  | 2026-08-12T07:18:49.770809879Z 🇺🇸/🇪🇺 $/€: 1.151/1.155 синий 💙
+telegram_bot  | 2026-08-12T07:18:49.770812544Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T07:18:49.770815169Z 🇺🇸/🇨🇭 $/₣: 1.226/1.235
+telegram_bot  | 2026-08-12T07:18:49.770817784Z  
+telegram_bot  | 2026-08-12T07:18:49.770820339Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T07:18:49.770823174Z 
+telegram_bot  | 2026-08-12T07:18:49.770825679Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T07:18:49.770828284Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T07:18:49.770830859Z 🇨🇭/🇺🇦 CHF: 55.05/55.40
+telegram_bot  | 2026-08-12T07:18:49.770833394Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T07:18:49.770835959Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T07:18:49.770838904Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T07:18:49.770841539Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T07:18:49.770844074Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T07:18:49.770846689Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T07:18:49.770849264Z 
+telegram_bot  | 2026-08-12T07:18:49.770851810Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T07:18:49.770854966Z                                                                             
+telegram_bot  | 2026-08-12T07:18:49.770857651Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T07:18:49.770860507Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T07:18:49.770871969Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T07:18:49.770874975Z                                                                          
+telegram_bot  | 2026-08-12T07:18:49.770889874Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T07:18:49.770893120Z 
+telegram_bot  | 2026-08-12T07:18:49.770895254Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T07:18:49.770897578Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T07:18:49.770899784Z 
+telegram_bot  | 2026-08-12T07:18:49.770901918Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T07:18:49.770904202Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T07:18:49.857311651Z 2026-08-12 10:18:49.857 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.82', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:18:49.885237195Z 2026-08-12 10:18:49.885 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.82', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:18:49.915009489Z 2026-08-12 10:18:49.914 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.82', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:18:49.915692598Z 2026-08-12 10:18:49.915 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.60 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.62 / 44.90</b> білий
+telegram_bot  | 2026-08-12T07:18:49.915701645Z 
+telegram_bot  | 2026-08-12T07:18:49.943152726Z 2026-08-12 10:18:49.942 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.62', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:18:49.972334232Z 2026-08-12 10:18:49.972 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.82', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:18:50.002576641Z 2026-08-12 10:18:50.002 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.82', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:18:50.030219695Z 2026-08-12 10:18:50.030 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.82', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:18:50.030907022Z 2026-08-12 10:18:50.030 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T07:18:50.030916120Z 
+telegram_bot  | 2026-08-12T07:18:50.031123273Z 2026-08-12 10:18:50.031 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T07:18:50.031130206Z 
+telegram_bot  | 2026-08-12T07:18:50.031132631Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T07:18:50.031135046Z 
+telegram_bot  | 2026-08-12T07:18:50.031332990Z 2026-08-12 10:18:50.031 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T07:18:50.031339563Z 
+telegram_bot  | 2026-08-12T07:18:50.031561034Z 2026-08-12 10:18:50.031 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T07:18:50.031577226Z 
+telegram_bot  | 2026-08-12T07:18:50.031778277Z 2026-08-12 10:18:50.031 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T07:18:50.031784789Z 
+telegram_bot  | 2026-08-12T07:18:50.031978947Z 2026-08-12 10:18:50.031 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T07:18:50.031985369Z 
+telegram_bot  | 2026-08-12T07:18:50.032179968Z 2026-08-12 10:18:50.032 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T07:18:50.032186261Z 
+telegram_bot  | 2026-08-12T07:18:50.032385378Z 2026-08-12 10:18:50.032 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T07:18:50.032391770Z 
+telegram_bot  | 2026-08-12T07:18:50.032605385Z 2026-08-12 10:18:50.032 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T07:18:50.032612429Z 
+telegram_bot  | 2026-08-12T07:18:50.032839080Z 2026-08-12 10:18:50.032 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T07:18:50.032846134Z 
+telegram_bot  | 2026-08-12T07:18:50.033221394Z 2026-08-12 10:18:50.033 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T07:18:50.033228207Z 
+telegram_bot  | 2026-08-12T07:18:50.033421483Z 2026-08-12 10:18:50.033 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T07:18:50.033427966Z 
+telegram_bot  | 2026-08-12T07:18:50.033430270Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T07:18:50.033432645Z 
+telegram_bot  | 2026-08-12T07:18:50.534827825Z INFO:aiogram.event:Update id=81060040 is handled. Duration 764 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T07:19:26.586616517Z 2026-08-12 10:19:26.586 | DEBUG    | handlers:channel_handler:405 - 
+telegram_bot  | 2026-08-12T07:19:26.586896732Z INFO:aiogram.event:Update id=81060041 is handled. Duration 0 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T07:30:20.572796102Z 2026-08-12 10:30:20.572 | INFO     | handlers:echo_handler:435 - ветхие 200 евро*48,83 , (-5%)
+telegram_bot  | 2026-08-12T07:30:20.573115854Z INFO:aiogram.event:Update id=81060042 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T07:33:25.232014305Z 2026-08-12 10:33:25.231 | INFO     | handlers:echo_handler:435 - 1800€ по 1.151 купить за синий $, клин сервис , ольга
+telegram_bot  | 2026-08-12T07:33:25.232414203Z INFO:aiogram.event:Update id=81060043 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T07:38:56.707716609Z 2026-08-12 10:38:56.707 | INFO     | handlers:echo_handler:435 - $ мы с ним не договаривались по курсу, договорились по актуальному курсу который будет на момент когда он придет, на всякий случай пишу
+telegram_bot  | 2026-08-12T07:38:56.707769381Z INFO:aiogram.event:Update id=81060044 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T07:39:43.485659230Z 2026-08-12 10:39:43.482 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T07:39:43.485738042Z 🇺🇸/🇺🇦 USD: 44.85/44.95 білий 
+telegram_bot  | 2026-08-12T07:39:43.485744796Z 🇺🇸/🇺🇦 USD: 44.92/45.05 синій 💙 
+telegram_bot  | 2026-08-12T07:39:43.485748754Z 🇪🇺/🇺🇦 EUR: 51.80/51.90
+telegram_bot  | 2026-08-12T07:39:43.485751509Z 
+telegram_bot  | 2026-08-12T07:39:43.485754104Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T07:39:43.485756840Z 🇺🇸/🇪🇺 $/€: 1.1535/1.157 білий 
+telegram_bot  | 2026-08-12T07:39:43.485759535Z 🇺🇸/🇪🇺 $/€: 1.151/1.155 синий 💙
+telegram_bot  | 2026-08-12T07:39:43.485762230Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T07:39:43.485764855Z 🇺🇸/🇨🇭 $/₣: 1.226/1.235
+telegram_bot  | 2026-08-12T07:39:43.485767440Z  
+telegram_bot  | 2026-08-12T07:39:43.485770075Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T07:39:43.485772991Z 
+telegram_bot  | 2026-08-12T07:39:43.485775466Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T07:39:43.485778091Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T07:39:43.485780645Z 🇨🇭/🇺🇦 CHF: 55.05/55.40
+telegram_bot  | 2026-08-12T07:39:43.485783180Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T07:39:43.485785725Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T07:39:43.485788430Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T07:39:43.485791096Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T07:39:43.485793641Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T07:39:43.485796257Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T07:39:43.485809051Z 
+telegram_bot  | 2026-08-12T07:39:43.485811686Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T07:39:43.485814842Z                                                                             
+telegram_bot  | 2026-08-12T07:39:43.485817517Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T07:39:43.485820363Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T07:39:43.485823108Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T07:39:43.485825974Z                                                                          
+telegram_bot  | 2026-08-12T07:39:43.485829581Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T07:39:43.485840321Z 
+telegram_bot  | 2026-08-12T07:39:43.485842517Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T07:39:43.485844841Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T07:39:43.485847065Z 
+telegram_bot  | 2026-08-12T07:39:43.485849209Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T07:39:43.485851564Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T07:39:43.572371826Z 2026-08-12 10:39:43.572 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.85', 'sell': '44.95', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:39:43.602111546Z 2026-08-12 10:39:43.601 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.85', 'sell': '44.95', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:39:43.634321851Z 2026-08-12 10:39:43.634 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.85', 'sell': '44.95', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:39:43.635049537Z 2026-08-12 10:39:43.634 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.62 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.65 / 44.95</b> білий
+telegram_bot  | 2026-08-12T07:39:43.635059185Z 
+telegram_bot  | 2026-08-12T07:39:43.674685653Z 2026-08-12 10:39:43.674 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.65', 'sell': '44.95', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:39:43.715560489Z 2026-08-12 10:39:43.712 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.85', 'sell': '44.95', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:39:43.749297113Z 2026-08-12 10:39:43.749 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.85', 'sell': '44.95', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:39:43.784777917Z 2026-08-12 10:39:43.783 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.85', 'sell': '44.95', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T07:39:43.784786243Z 2026-08-12 10:39:43.784 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T07:39:43.784790322Z 
+telegram_bot  | 2026-08-12T07:39:43.784792566Z 2026-08-12 10:39:43.784 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T07:39:43.784795392Z 
+telegram_bot  | 2026-08-12T07:39:43.784797526Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T07:39:43.784799830Z 
+telegram_bot  | 2026-08-12T07:39:43.784804439Z 2026-08-12 10:39:43.784 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T07:39:43.784806994Z 
+telegram_bot  | 2026-08-12T07:39:43.784809278Z 2026-08-12 10:39:43.784 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T07:39:43.784811693Z 
+telegram_bot  | 2026-08-12T07:39:43.785260826Z 2026-08-12 10:39:43.785 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T07:39:43.785280855Z 
+telegram_bot  | 2026-08-12T07:39:43.785477517Z 2026-08-12 10:39:43.785 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T07:39:43.785484552Z 
+telegram_bot  | 2026-08-12T07:39:43.785689961Z 2026-08-12 10:39:43.785 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T07:39:43.785696444Z 
+telegram_bot  | 2026-08-12T07:39:43.785901983Z 2026-08-12 10:39:43.785 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T07:39:43.785908446Z 
+telegram_bot  | 2026-08-12T07:39:43.786102313Z 2026-08-12 10:39:43.786 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T07:39:43.786108525Z 
+telegram_bot  | 2026-08-12T07:39:43.786317783Z 2026-08-12 10:39:43.786 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T07:39:43.786324706Z 
+telegram_bot  | 2026-08-12T07:39:43.786699925Z 2026-08-12 10:39:43.786 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T07:39:43.786707399Z 
+telegram_bot  | 2026-08-12T07:39:43.786905284Z 2026-08-12 10:39:43.786 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T07:39:43.786911748Z 
+telegram_bot  | 2026-08-12T07:39:43.786914152Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T07:39:43.786916747Z 
+telegram_bot  | 2026-08-12T07:39:44.259389217Z INFO:aiogram.event:Update id=81060045 is handled. Duration 776 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T07:42:04.995978582Z 2026-08-12 10:42:04.995 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T07:42:04.996058143Z 🇺🇸/🇺🇦 USD: 44.85/44.95 білий 
+telegram_bot  | 2026-08-12T07:42:04.996062642Z 🇺🇸/🇺🇦 USD: 44.95/45.05 синій 💙 
+telegram_bot  | 2026-08-12T07:42:04.996065617Z 🇪🇺/🇺🇦 EUR: 51.82/51.95
+telegram_bot  | 2026-08-12T07:42:04.996068373Z 
+telegram_bot  | 2026-08-12T07:42:04.996070908Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T07:42:04.996073543Z 🇺🇸/🇪🇺 $/€: 1.1535/1.157 білий 
+telegram_bot  | 2026-08-12T07:42:04.996076228Z 🇺🇸/🇪🇺 $/€: 1.151/1.155 синий 💙
+telegram_bot  | 2026-08-12T07:42:04.996078873Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T07:42:04.996081438Z 🇺🇸/🇨🇭 $/₣: 1.226/1.235
+telegram_bot  | 2026-08-12T07:42:04.996096205Z  
+telegram_bot  | 2026-08-12T07:42:04.996098770Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T07:42:04.996102387Z 
+telegram_bot  | 2026-08-12T07:42:04.996104852Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T07:42:04.996107447Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T07:42:04.996122105Z 🇨🇭/🇺🇦 CHF: 55.05/55.40
+telegram_bot  | 2026-08-12T07:42:04.996124369Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T07:42:04.996126544Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T07:42:04.996128898Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T07:42:04.996131143Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T07:42:04.996133297Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T07:42:04.996135521Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T07:42:04.996137675Z 
+telegram_bot  | 2026-08-12T07:42:04.996139858Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T07:42:04.996142604Z                                                                             
+telegram_bot  | 2026-08-12T07:42:04.996144838Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T07:42:04.996147263Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T07:42:04.996149557Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T07:42:04.996151982Z                                                                          
+telegram_bot  | 2026-08-12T07:42:04.996155569Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T07:42:04.996158634Z 
+telegram_bot  | 2026-08-12T07:42:04.996172050Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T07:42:04.996174876Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T07:42:04.996177160Z 
+telegram_bot  | 2026-08-12T07:42:04.996179274Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T07:42:04.996181589Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T07:42:05.071262827Z 2026-08-12 10:42:05.070 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T07:42:05.072029275Z 2026-08-12 10:42:05.071 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T07:42:05.072254575Z 2026-08-12 10:42:05.072 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T07:42:05.072462921Z 2026-08-12 10:42:05.072 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.65 44.95 - 1 🇺🇸 🇺🇦 <b>USD 44.65 / 44.95</b> білий
+telegram_bot  | 2026-08-12T07:42:05.072470716Z 
+telegram_bot  | 2026-08-12T07:42:05.072678942Z 2026-08-12 10:42:05.072 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.65/44.95
+telegram_bot  | 2026-08-12T07:42:05.072861760Z 2026-08-12 10:42:05.072 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T07:42:05.073060408Z 2026-08-12 10:42:05.072 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T07:42:05.073257011Z 2026-08-12 10:42:05.073 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T07:42:05.073458736Z 2026-08-12 10:42:05.073 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T07:42:05.073466821Z 
+telegram_bot  | 2026-08-12T07:42:05.073668514Z 2026-08-12 10:42:05.073 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T07:42:05.073675648Z 
+telegram_bot  | 2026-08-12T07:42:05.073678033Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T07:42:05.073680397Z 
+telegram_bot  | 2026-08-12T07:42:05.073879156Z 2026-08-12 10:42:05.073 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T07:42:05.073886290Z 
+telegram_bot  | 2026-08-12T07:42:05.074110065Z 2026-08-12 10:42:05.074 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T07:42:05.074117298Z 
+telegram_bot  | 2026-08-12T07:42:05.074330324Z 2026-08-12 10:42:05.074 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T07:42:05.074337368Z 
+telegram_bot  | 2026-08-12T07:42:05.074547497Z 2026-08-12 10:42:05.074 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T07:42:05.074554531Z 
+telegram_bot  | 2026-08-12T07:42:05.074752617Z 2026-08-12 10:42:05.074 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T07:42:05.074759370Z 
+telegram_bot  | 2026-08-12T07:42:05.074982003Z 2026-08-12 10:42:05.074 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T07:42:05.074989197Z 
+telegram_bot  | 2026-08-12T07:42:05.075221630Z 2026-08-12 10:42:05.075 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T07:42:05.075229835Z 
+telegram_bot  | 2026-08-12T07:42:05.075460464Z 2026-08-12 10:42:05.075 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T07:42:05.075468800Z 
+telegram_bot  | 2026-08-12T07:42:05.075828515Z 2026-08-12 10:42:05.075 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T07:42:05.075835198Z 
+telegram_bot  | 2026-08-12T07:42:05.076033584Z 2026-08-12 10:42:05.075 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T07:42:05.076048804Z 
+telegram_bot  | 2026-08-12T07:42:05.076052371Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T07:42:05.076055677Z 
+telegram_bot  | 2026-08-12T07:42:05.555734639Z INFO:aiogram.event:Update id=81060046 is handled. Duration 559 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T07:42:59.739871760Z 2026-08-12 10:42:59.739 | DEBUG    | handlers:channel_handler:405 - 
+telegram_bot  | 2026-08-12T07:42:59.740316447Z INFO:aiogram.event:Update id=81060047 is handled. Duration 0 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:01:20.567577641Z 2026-08-12 11:01:20.567 | INFO     | handlers:echo_handler:435 - 20 минут будет
+telegram_bot  | 2026-08-12T08:01:20.567598411Z INFO:aiogram.event:Update id=81060048 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:05:06.209500148Z 2026-08-12 11:05:06.209 | INFO     | handlers:echo_handler:435 - купила
+telegram_bot  | 2026-08-12T08:05:06.209798627Z INFO:aiogram.event:Update id=81060049 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:30:56.721856573Z 2026-08-12 11:30:56.721 | INFO     | handlers:echo_handler:435 - +500 евро*51.20
+telegram_bot  | 2026-08-12T08:30:56.722255177Z 2026-08-12 11:30:56.722 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=500, currency=eur, rate=51.2
+telegram_bot  | 2026-08-12T08:30:56.946470345Z 2026-08-12 11:30:56.946 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная покупка
+telegram_bot  | 2026-08-12T08:30:56.946785747Z INFO:aiogram.event:Update id=81060050 is handled. Duration 226 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:33:41.308074886Z 2026-08-12 11:33:41.307 | INFO     | handlers:echo_handler:435 - +700 дол микс*44,85
+telegram_bot  | 2026-08-12T08:33:41.308394216Z INFO:aiogram.event:Update id=81060051 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:44:46.923534819Z 2026-08-12 11:44:46.923 | INFO     | handlers:echo_handler:435 - купила $ 9000*44,95 нов
+telegram_bot  | 2026-08-12T08:44:46.923555129Z шекель продала
+telegram_bot  | 2026-08-12T08:44:46.923558416Z 26130*13,70
+telegram_bot  | 2026-08-12T08:44:46.923571671Z INFO:aiogram.event:Update id=81060052 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:46:09.890324751Z 2026-08-12 11:46:09.890 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T08:46:09.890417010Z 🇺🇸/🇺🇦 USD: 44.85/44.95 білий 
+telegram_bot  | 2026-08-12T08:46:09.890421429Z 🇺🇸/🇺🇦 USD: 44.95/45.05 синій 💙 
+telegram_bot  | 2026-08-12T08:46:09.890424956Z 🇪🇺/🇺🇦 EUR: 51.82/51.90
+telegram_bot  | 2026-08-12T08:46:09.890428152Z 
+telegram_bot  | 2026-08-12T08:46:09.890431448Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T08:46:09.890434714Z 🇺🇸/🇪🇺 $/€: 1.153/1.156 білий 
+telegram_bot  | 2026-08-12T08:46:09.890522134Z 🇺🇸/🇪🇺 $/€: 1.150/1.154 синий 💙
+telegram_bot  | 2026-08-12T08:46:09.890525851Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T08:46:09.890529067Z 🇺🇸/🇨🇭 $/₣: 1.226/1.235
+telegram_bot  | 2026-08-12T08:46:09.890548255Z  
+telegram_bot  | 2026-08-12T08:46:09.890551070Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T08:46:09.890554076Z 
+telegram_bot  | 2026-08-12T08:46:09.890556601Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T08:46:09.890559487Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T08:46:09.890562162Z 🇨🇭/🇺🇦 CHF: 55.05/55.40
+telegram_bot  | 2026-08-12T08:46:09.890564727Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T08:46:09.890567322Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T08:46:09.890570087Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T08:46:09.890572832Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T08:46:09.890575457Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T08:46:09.890657987Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T08:46:09.890661014Z 
+telegram_bot  | 2026-08-12T08:46:09.890663609Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T08:46:09.890666995Z                                                                             
+telegram_bot  | 2026-08-12T08:46:09.890669731Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T08:46:09.890672817Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T08:46:09.890675642Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T08:46:09.890678568Z                                                                          
+telegram_bot  | 2026-08-12T08:46:09.890682105Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T08:46:09.890686142Z 
+telegram_bot  | 2026-08-12T08:46:09.890688637Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T08:46:09.890691483Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T08:46:09.890694128Z 
+telegram_bot  | 2026-08-12T08:46:09.890696643Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T08:46:09.890699638Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T08:46:09.946435319Z 2026-08-12 11:46:09.946 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T08:46:09.946668903Z 2026-08-12 11:46:09.946 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T08:46:09.946869643Z 2026-08-12 11:46:09.946 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T08:46:09.947067176Z 2026-08-12 11:46:09.946 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.65 44.95 - 1 🇺🇸 🇺🇦 <b>USD 44.65 / 44.95</b> білий
+telegram_bot  | 2026-08-12T08:46:09.947076755Z 
+telegram_bot  | 2026-08-12T08:46:09.947674645Z 2026-08-12 11:46:09.947 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.65/44.95
+telegram_bot  | 2026-08-12T08:46:09.947862730Z 2026-08-12 11:46:09.947 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T08:46:09.948043311Z 2026-08-12 11:46:09.947 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T08:46:09.948237067Z 2026-08-12 11:46:09.948 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T08:46:09.948435361Z 2026-08-12 11:46:09.948 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T08:46:09.948458426Z 
+telegram_bot  | 2026-08-12T08:46:09.948676129Z 2026-08-12 11:46:09.948 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T08:46:09.948683934Z 
+telegram_bot  | 2026-08-12T08:46:09.948686379Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T08:46:09.948688733Z 
+telegram_bot  | 2026-08-12T08:46:09.948923940Z 2026-08-12 11:46:09.948 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T08:46:09.948932146Z 
+telegram_bot  | 2026-08-12T08:46:09.949143567Z 2026-08-12 11:46:09.949 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T08:46:09.949150550Z 
+telegram_bot  | 2026-08-12T08:46:09.949354936Z 2026-08-12 11:46:09.949 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T08:46:09.949361790Z 
+telegram_bot  | 2026-08-12T08:46:09.949566568Z 2026-08-12 11:46:09.949 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T08:46:09.949573832Z 
+telegram_bot  | 2026-08-12T08:46:09.949777927Z 2026-08-12 11:46:09.949 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T08:46:09.949784440Z 
+telegram_bot  | 2026-08-12T08:46:09.949983466Z 2026-08-12 11:46:09.949 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T08:46:09.949989768Z 
+telegram_bot  | 2026-08-12T08:46:09.950197081Z 2026-08-12 11:46:09.950 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T08:46:09.950204515Z 
+telegram_bot  | 2026-08-12T08:46:09.950431296Z 2026-08-12 11:46:09.950 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T08:46:09.950451936Z 
+telegram_bot  | 2026-08-12T08:46:09.950804560Z 2026-08-12 11:46:09.950 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T08:46:09.950811634Z 
+telegram_bot  | 2026-08-12T08:46:09.951007825Z 2026-08-12 11:46:09.950 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T08:46:09.951014297Z 
+telegram_bot  | 2026-08-12T08:46:09.951016732Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T08:46:09.951019106Z 
+telegram_bot  | 2026-08-12T08:46:10.445118615Z INFO:aiogram.event:Update id=81060053 is handled. Duration 555 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:47:06.453860678Z 2026-08-12 11:47:06.453 | INFO     | handlers:echo_handler:435 - 10000€ по 1.153 купить за белый $, сергей
+telegram_bot  | 2026-08-12T08:47:06.454527983Z INFO:aiogram.event:Update id=81060054 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:47:28.863688843Z 2026-08-12 11:47:28.863 | INFO     | handlers:echo_handler:435 - белых не хватает?
+telegram_bot  | 2026-08-12T08:47:28.864219032Z INFO:aiogram.event:Update id=81060055 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:47:52.685591259Z 2026-08-12 11:47:52.685 | INFO     | handlers:echo_handler:435 - у меня их нет вообще
+telegram_bot  | 2026-08-12T08:47:52.685630896Z INFO:aiogram.event:Update id=81060056 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:48:32.256434360Z 2026-08-12 11:48:32.256 | INFO     | handlers:echo_handler:435 - 10 минут
+telegram_bot  | 2026-08-12T08:48:32.256964759Z INFO:aiogram.event:Update id=81060057 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:49:24.631364374Z 2026-08-12 11:49:24.631 | INFO     | handlers:echo_handler:435 - +6000 син*44,95 от татьяны
+telegram_bot  | 2026-08-12T08:49:24.633724619Z INFO:aiogram.event:Update id=81060058 is handled. Duration 3 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:49:43.806951240Z 2026-08-12 11:49:43.806 | INFO     | handlers:echo_handler:435 - +610 грн проверка
+telegram_bot  | 2026-08-12T08:49:43.806972922Z INFO:aiogram.event:Update id=81060059 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:50:27.086525027Z 2026-08-12 11:50:27.086 | INFO     | handlers:echo_handler:435 - у меня 5000 бел
+telegram_bot  | 2026-08-12T08:50:27.086946557Z INFO:aiogram.event:Update id=81060060 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:53:28.108040840Z 2026-08-12 11:53:28.107 | INFO     | handlers:echo_handler:435 - привезут
+telegram_bot  | 2026-08-12T08:53:28.108347567Z INFO:aiogram.event:Update id=81060061 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:56:15.666237670Z 2026-08-12 11:56:15.665 | DEBUG    | handlers:channel_handler:405 - 
+telegram_bot  | 2026-08-12T08:56:15.666272858Z INFO:aiogram.event:Update id=81060062 is handled. Duration 0 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:58:02.382218905Z 2026-08-12 11:58:02.381 | INFO     | handlers:echo_handler:435 - в кассе
+telegram_bot  | 2026-08-12T08:58:02.382737232Z INFO:aiogram.event:Update id=81060063 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:58:17.994454790Z 2026-08-12 11:58:17.994 | INFO     | handlers:echo_handler:435 - +7000 син×44.30
+telegram_bot  | 2026-08-12T08:58:17.995131695Z INFO:aiogram.event:Update id=81060064 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:58:45.434459749Z 2026-08-12 11:58:45.433 | INFO     | handlers:echo_handler:435 - 5 мин
+telegram_bot  | 2026-08-12T08:58:45.434503333Z INFO:aiogram.event:Update id=81060065 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T08:59:07.319042642Z 2026-08-12 11:59:07.318 | INFO     | handlers:echo_handler:435 - спешит
+telegram_bot  | 2026-08-12T08:59:07.319062640Z INFO:aiogram.event:Update id=81060066 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:02:52.959307435Z 2026-08-12 12:02:52.959 | INFO     | handlers:echo_handler:435 - +500 син*44,95
+telegram_bot  | 2026-08-12T09:02:52.959570466Z 2026-08-12 12:02:52.959 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=500, currency=usdnew, rate=44.95
+telegram_bot  | 2026-08-12T09:02:53.012548357Z 2026-08-12 12:02:53.012 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T09:02:53.012860944Z INFO:aiogram.event:Update id=81060067 is handled. Duration 54 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:03:40.913034807Z 2026-08-12 12:03:40.912 | INFO     | handlers:echo_handler:435 - олег
+telegram_bot  | 2026-08-12T09:03:40.913082069Z 25000*45.02 с продать
+telegram_bot  | 2026-08-12T09:03:40.913347335Z INFO:aiogram.event:Update id=81060068 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:03:45.676203169Z 2026-08-12 12:03:45.675 | INFO     | handlers:echo_handler:435 - будет ?
+telegram_bot  | 2026-08-12T09:03:45.676231114Z INFO:aiogram.event:Update id=81060069 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:04:12.528917796Z 2026-08-12 12:04:12.528 | INFO     | handlers:echo_handler:435 - да
+telegram_bot  | 2026-08-12T09:04:12.529202329Z INFO:aiogram.event:Update id=81060070 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:08:09.187449801Z 2026-08-12 12:08:09.186 | INFO     | handlers:echo_handler:435 - +10000 евро*1,153 за 11530 бел
+telegram_bot  | 2026-08-12T09:08:09.187483847Z INFO:aiogram.event:Update id=81060071 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:09:48.526118908Z 2026-08-12 12:09:48.525 | INFO     | handlers:echo_handler:435 - андрею 
+telegram_bot  | 2026-08-12T09:09:48.526159216Z нашему
+telegram_bot  | 2026-08-12T09:09:48.526164275Z грн на 5000£ 60.00
+telegram_bot  | 2026-08-12T09:09:48.526167212Z INFO:aiogram.event:Update id=81060072 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:13:45.318502267Z 2026-08-12 12:13:45.318 | INFO     | handlers:echo_handler:435 - мельницкая нужна грн
+telegram_bot  | 2026-08-12T09:13:45.319071773Z INFO:aiogram.event:Update id=81060073 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:14:38.856530931Z 2026-08-12 12:14:38.856 | INFO     | handlers:echo_handler:435 - +10 000 б*44.85 договор
+telegram_bot  | 2026-08-12T09:14:38.856917151Z INFO:aiogram.event:Update id=81060074 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:14:55.721500381Z 2026-08-12 12:14:55.721 | INFO     | handlers:echo_handler:435 - да
+telegram_bot  | 2026-08-12T09:14:55.721791847Z INFO:aiogram.event:Update id=81060075 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:19:16.377658690Z 2026-08-12 12:19:16.377 | INFO     | handlers:echo_handler:435 - купюра ?
+telegram_bot  | 2026-08-12T09:19:16.377677446Z INFO:aiogram.event:Update id=81060076 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:19:37.862349316Z 2026-08-12 12:19:37.862 | INFO     | handlers:echo_handler:435 - все по 100 новые
+telegram_bot  | 2026-08-12T09:19:37.862653527Z INFO:aiogram.event:Update id=81060077 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:21:49.687555191Z 2026-08-12 12:21:49.687 | INFO     | handlers:echo_handler:435 - +9000 б*44,85
+telegram_bot  | 2026-08-12T09:21:49.687588485Z +2000 син*44,95
+telegram_bot  | 2026-08-12T09:21:49.687592062Z INFO:aiogram.event:Update id=81060078 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:26:37.175144177Z 2026-08-12 12:26:37.174 | INFO     | handlers:echo_handler:435 - +700 б*44,85
+telegram_bot  | 2026-08-12T09:26:37.175589925Z 2026-08-12 12:26:37.175 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=700, currency=usd, rate=44.85
+telegram_bot  | 2026-08-12T09:26:37.411224686Z 2026-08-12 12:26:37.410 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная покупка
+telegram_bot  | 2026-08-12T09:26:37.411623012Z INFO:aiogram.event:Update id=81060079 is handled. Duration 237 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:26:48.008023768Z 2026-08-12 12:26:48.007 | INFO     | handlers:echo_handler:435 - +1300 син*44,95
+telegram_bot  | 2026-08-12T09:26:48.008304294Z 2026-08-12 12:26:48.008 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=1300, currency=usdnew, rate=44.95
+telegram_bot  | 2026-08-12T09:26:48.021412220Z 2026-08-12 12:26:48.021 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T09:26:48.021671195Z INFO:aiogram.event:Update id=81060080 is handled. Duration 14 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:27:41.246205860Z 2026-08-12 12:27:41.245 | INFO     | handlers:echo_handler:435 - ок
+telegram_bot  | 2026-08-12T09:27:41.246299863Z INFO:aiogram.event:Update id=81060081 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:31:05.090962968Z 2026-08-12 12:31:05.090 | INFO     | handlers:echo_handler:435 - 500 грн оставил дедуля в клиент зоне. записываю в табл. если вернется отдам
+telegram_bot  | 2026-08-12T09:31:05.091388746Z INFO:aiogram.event:Update id=81060082 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:31:34.738591791Z 2026-08-12 12:31:34.737 | INFO     | handlers:echo_handler:435 - -5000 фунт*60,2 договор
+telegram_bot  | 2026-08-12T09:31:34.738878308Z INFO:aiogram.event:Update id=81060083 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:32:16.377665042Z 2026-08-12 12:32:16.375 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T09:32:16.377685793Z 🇺🇸/🇺🇦 USD: 44.85/44.95 білий 
+telegram_bot  | 2026-08-12T09:32:16.377695692Z 🇺🇸/🇺🇦 USD: 44.95/45.05 синій 💙 
+telegram_bot  | 2026-08-12T09:32:16.377698167Z 🇪🇺/🇺🇦 EUR: 51.80/51.90
+telegram_bot  | 2026-08-12T09:32:16.377700432Z 
+telegram_bot  | 2026-08-12T09:32:16.377702596Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T09:32:16.377704950Z 🇺🇸/🇪🇺 $/€: 1.153/1.156 білий 
+telegram_bot  | 2026-08-12T09:32:16.377707305Z 🇺🇸/🇪🇺 $/€: 1.150/1.154 синий 💙
+telegram_bot  | 2026-08-12T09:32:16.377709579Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T09:32:16.377711793Z 🇺🇸/🇨🇭 $/₣: 1.226/1.235
+telegram_bot  | 2026-08-12T09:32:16.377713988Z  
+telegram_bot  | 2026-08-12T09:32:16.377716172Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T09:32:16.377718687Z 
+telegram_bot  | 2026-08-12T09:32:16.377720771Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T09:32:16.377723045Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T09:32:16.377725219Z 🇨🇭/🇺🇦 CHF: 55.05/55.40
+telegram_bot  | 2026-08-12T09:32:16.377737404Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T09:32:16.377739718Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T09:32:16.377742063Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T09:32:16.377744317Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T09:32:16.377746511Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T09:32:16.377748756Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T09:32:16.377751010Z 
+telegram_bot  | 2026-08-12T09:32:16.377753234Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T09:32:16.377756010Z                                                                             
+telegram_bot  | 2026-08-12T09:32:16.377758324Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T09:32:16.377760829Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T09:32:16.377763123Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T09:32:16.377765588Z                                                                          
+telegram_bot  | 2026-08-12T09:32:16.377768684Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T09:32:16.377771820Z 
+telegram_bot  | 2026-08-12T09:32:16.377773944Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T09:32:16.377778945Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T09:32:16.377781159Z 
+telegram_bot  | 2026-08-12T09:32:16.377783243Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T09:32:16.377785537Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T09:32:16.436160341Z 2026-08-12 12:32:16.435 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T09:32:16.436450365Z 2026-08-12 12:32:16.436 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T09:32:16.436732012Z 2026-08-12 12:32:16.436 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T09:32:16.436968162Z 2026-08-12 12:32:16.436 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.65 44.95 - 1 🇺🇸 🇺🇦 <b>USD 44.65 / 44.95</b> білий
+telegram_bot  | 2026-08-12T09:32:16.436976247Z 
+telegram_bot  | 2026-08-12T09:32:16.437574050Z 2026-08-12 12:32:16.437 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.65/44.95
+telegram_bot  | 2026-08-12T09:32:16.437795110Z 2026-08-12 12:32:16.437 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T09:32:16.438017472Z 2026-08-12 12:32:16.437 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T09:32:16.438240346Z 2026-08-12 12:32:16.438 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.85/44.95
+telegram_bot  | 2026-08-12T09:32:16.438488790Z 2026-08-12 12:32:16.438 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T09:32:16.438496785Z 
+telegram_bot  | 2026-08-12T09:32:16.438753193Z 2026-08-12 12:32:16.438 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T09:32:16.438760538Z 
+telegram_bot  | 2026-08-12T09:32:16.438763313Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T09:32:16.438766269Z 
+telegram_bot  | 2026-08-12T09:32:16.439009542Z 2026-08-12 12:32:16.438 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T09:32:16.439016827Z 
+telegram_bot  | 2026-08-12T09:32:16.439262595Z 2026-08-12 12:32:16.439 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T09:32:16.439269729Z 
+telegram_bot  | 2026-08-12T09:32:16.439534974Z 2026-08-12 12:32:16.439 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T09:32:16.439542018Z 
+telegram_bot  | 2026-08-12T09:32:16.439791443Z 2026-08-12 12:32:16.439 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T09:32:16.439798486Z 
+telegram_bot  | 2026-08-12T09:32:16.440041639Z 2026-08-12 12:32:16.439 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T09:32:16.440059885Z 
+telegram_bot  | 2026-08-12T09:32:16.440300644Z 2026-08-12 12:32:16.440 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T09:32:16.440307737Z 
+telegram_bot  | 2026-08-12T09:32:16.440568995Z 2026-08-12 12:32:16.440 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T09:32:16.440576600Z 
+telegram_bot  | 2026-08-12T09:32:16.440814242Z 2026-08-12 12:32:16.440 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T09:32:16.440821566Z 
+telegram_bot  | 2026-08-12T09:32:16.441165846Z 2026-08-12 12:32:16.441 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T09:32:16.441172398Z 
+telegram_bot  | 2026-08-12T09:32:16.441357749Z 2026-08-12 12:32:16.441 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T09:32:16.441364442Z 
+telegram_bot  | 2026-08-12T09:32:16.441366797Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T09:32:16.441369121Z 
+telegram_bot  | 2026-08-12T09:32:16.933044422Z INFO:aiogram.event:Update id=81060084 is handled. Duration 557 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:32:45.012506230Z 2026-08-12 12:32:45.012 | INFO     | handlers:echo_handler:435 - + 4300 с по 44,95
+telegram_bot  | 2026-08-12T09:32:45.012523924Z INFO:aiogram.event:Update id=81060085 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:35:10.366515839Z 2026-08-12 12:35:10.366 | INFO     | handlers:echo_handler:435 - ветхие 100дол-7%*41,4
+telegram_bot  | 2026-08-12T09:35:10.366953790Z INFO:aiogram.event:Update id=81060086 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:35:28.191763375Z 2026-08-12 12:35:28.191 | INFO     | handlers:echo_handler:435 - 1000 франков по 55.40 продать, елена в 16.00+-
+telegram_bot  | 2026-08-12T09:35:28.192334236Z INFO:aiogram.event:Update id=81060087 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:39:54.660886347Z 2026-08-12 12:39:54.660 | INFO     | handlers:echo_handler:435 - ок
+telegram_bot  | 2026-08-12T09:39:54.661350369Z INFO:aiogram.event:Update id=81060088 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:42:49.610261186Z 2026-08-12 12:42:49.609 | INFO     | handlers:echo_handler:435 - продала
+telegram_bot  | 2026-08-12T09:42:49.610884196Z INFO:aiogram.event:Update id=81060089 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:49:08.180010465Z 2026-08-12 12:49:08.179 | INFO     | handlers:echo_handler:435 - передали 7000 мелкими( 2т по 20 и 5 т по 50) с андреем
+telegram_bot  | 2026-08-12T09:49:08.180331349Z INFO:aiogram.event:Update id=81060090 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:50:15.399249915Z 2026-08-12 12:50:15.399 | INFO     | handlers:echo_handler:435 - +600 син*44.30
+telegram_bot  | 2026-08-12T09:50:15.399533045Z 2026-08-12 12:50:15.399 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=600, currency=usdnew, rate=44.3
+telegram_bot  | 2026-08-12T09:50:15.606547535Z 2026-08-12 12:50:15.606 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная покупка
+telegram_bot  | 2026-08-12T09:50:15.606826487Z INFO:aiogram.event:Update id=81060091 is handled. Duration 208 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T09:53:13.750699429Z 2026-08-12 12:53:13.750 | INFO     | handlers:echo_handler:435 - +1000ев*51,8
+telegram_bot  | 2026-08-12T09:53:13.750717855Z INFO:aiogram.event:Update id=81060092 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:07:05.700055804Z 2026-08-12 13:07:05.699 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T10:07:05.700131551Z 🇺🇸/🇺🇦 USD: 44.83/44.90 білий 
+telegram_bot  | 2026-08-12T10:07:05.700135489Z 🇺🇸/🇺🇦 USD: 44.93/45.01 синій 💙 
+telegram_bot  | 2026-08-12T10:07:05.700138455Z 🇪🇺/🇺🇦 EUR: 51.80/51.90
+telegram_bot  | 2026-08-12T10:07:05.700141350Z 
+telegram_bot  | 2026-08-12T10:07:05.700144096Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T10:07:05.700146691Z 🇺🇸/🇪🇺 $/€: 1.153/1.156 білий 
+telegram_bot  | 2026-08-12T10:07:05.700149516Z 🇺🇸/🇪🇺 $/€: 1.150/1.154 синий 💙
+telegram_bot  | 2026-08-12T10:07:05.700152091Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T10:07:05.700154656Z 🇺🇸/🇨🇭 $/₣: 1.226/1.235
+telegram_bot  | 2026-08-12T10:07:05.700157441Z  
+telegram_bot  | 2026-08-12T10:07:05.700159946Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T10:07:05.700162791Z 
+telegram_bot  | 2026-08-12T10:07:05.700165256Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T10:07:05.700167821Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T10:07:05.700170687Z 🇨🇭/🇺🇦 CHF: 55.05/55.40
+telegram_bot  | 2026-08-12T10:07:05.700173202Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T10:07:05.700175736Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T10:07:05.700178402Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T10:07:05.700189995Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T10:07:05.700192760Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T10:07:05.700195395Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T10:07:05.700197950Z 
+telegram_bot  | 2026-08-12T10:07:05.700200806Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T10:07:05.700203912Z                                                                             
+telegram_bot  | 2026-08-12T10:07:05.700206537Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T10:07:05.700209332Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T10:07:05.700238398Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T10:07:05.700240964Z                                                                          
+telegram_bot  | 2026-08-12T10:07:05.700244431Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T10:07:05.700247507Z 
+telegram_bot  | 2026-08-12T10:07:05.700249571Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T10:07:05.700251855Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T10:07:05.700254049Z 
+telegram_bot  | 2026-08-12T10:07:05.700256123Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T10:07:05.700267776Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T10:07:05.797488412Z 2026-08-12 13:07:05.797 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.83', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:07:05.831888268Z 2026-08-12 13:07:05.831 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.83', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:07:05.870193684Z 2026-08-12 13:07:05.869 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.83', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:07:05.871197655Z 2026-08-12 13:07:05.871 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.65 44.95 - 1 🇺🇸 🇺🇦 <b>USD 44.63 / 44.90</b> білий
+telegram_bot  | 2026-08-12T10:07:05.871208826Z 
+telegram_bot  | 2026-08-12T10:07:05.903277945Z 2026-08-12 13:07:05.902 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.63', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:07:05.936141498Z 2026-08-12 13:07:05.935 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.83', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:07:05.989155619Z 2026-08-12 13:07:05.988 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.83', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:07:06.022209001Z 2026-08-12 13:07:06.021 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.83', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:07:06.023180428Z 2026-08-12 13:07:06.023 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T10:07:06.023190588Z 
+telegram_bot  | 2026-08-12T10:07:06.023440323Z 2026-08-12 13:07:06.023 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T10:07:06.023448169Z 
+telegram_bot  | 2026-08-12T10:07:06.023450673Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T10:07:06.023453529Z 
+telegram_bot  | 2026-08-12T10:07:06.023683085Z 2026-08-12 13:07:06.023 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T10:07:06.023698695Z 
+telegram_bot  | 2026-08-12T10:07:06.023917420Z 2026-08-12 13:07:06.023 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T10:07:06.023924093Z 
+telegram_bot  | 2026-08-12T10:07:06.024144200Z 2026-08-12 13:07:06.024 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T10:07:06.024150993Z 
+telegram_bot  | 2026-08-12T10:07:06.024360731Z 2026-08-12 13:07:06.024 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T10:07:06.024369288Z 
+telegram_bot  | 2026-08-12T10:07:06.024594616Z 2026-08-12 13:07:06.024 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T10:07:06.024601700Z 
+telegram_bot  | 2026-08-12T10:07:06.024820685Z 2026-08-12 13:07:06.024 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T10:07:06.024827939Z 
+telegram_bot  | 2026-08-12T10:07:06.025452432Z 2026-08-12 13:07:06.025 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T10:07:06.025459947Z 
+telegram_bot  | 2026-08-12T10:07:06.025727617Z 2026-08-12 13:07:06.025 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T10:07:06.025734540Z 
+telegram_bot  | 2026-08-12T10:07:06.026201828Z 2026-08-12 13:07:06.026 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T10:07:06.026208682Z 
+telegram_bot  | 2026-08-12T10:07:06.026418119Z 2026-08-12 13:07:06.026 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T10:07:06.026426815Z 
+telegram_bot  | 2026-08-12T10:07:06.026429150Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T10:07:06.026431835Z 
+telegram_bot  | 2026-08-12T10:07:06.524504181Z INFO:aiogram.event:Update id=81060093 is handled. Duration 824 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:07:48.351383370Z 2026-08-12 13:07:48.351 | DEBUG    | handlers:channel_handler:405 - 
+telegram_bot  | 2026-08-12T10:07:48.351782957Z INFO:aiogram.event:Update id=81060094 is handled. Duration 0 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:10:38.789832262Z 2026-08-12 13:10:38.789 | INFO     | handlers:echo_handler:435 - +1000 син*44,93
+telegram_bot  | 2026-08-12T10:10:38.790115201Z 2026-08-12 13:10:38.790 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=1000, currency=usdnew, rate=44.93
+telegram_bot  | 2026-08-12T10:10:38.849166065Z 2026-08-12 13:10:38.848 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T10:10:38.849440498Z INFO:aiogram.event:Update id=81060095 is handled. Duration 60 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:11:56.378591604Z 2026-08-12 13:11:56.378 | INFO     | handlers:echo_handler:435 - ок
+telegram_bot  | 2026-08-12T10:11:56.378622926Z INFO:aiogram.event:Update id=81060096 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:24:15.130997854Z 2026-08-12 13:24:15.130 | INFO     | handlers:echo_handler:435 - паша
+telegram_bot  | 2026-08-12T10:24:15.131019055Z 36т 44,90 б продать
+telegram_bot  | 2026-08-12T10:24:15.131022532Z INFO:aiogram.event:Update id=81060097 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:24:30.499012309Z 2026-08-12 13:24:30.498 | INFO     | handlers:echo_handler:435 - андрей наш
+telegram_bot  | 2026-08-12T10:24:30.499029182Z (30 б оставит )
+telegram_bot  | 2026-08-12T10:24:30.499032579Z INFO:aiogram.event:Update id=81060098 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:24:35.283627239Z 2026-08-12 13:24:35.283 | INFO     | handlers:echo_handler:435 - будет 6т б ?
+telegram_bot  | 2026-08-12T10:24:35.283895761Z INFO:aiogram.event:Update id=81060099 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:24:38.457146635Z 2026-08-12 13:24:38.456 | INFO     | handlers:echo_handler:435 - да
+telegram_bot  | 2026-08-12T10:24:38.457438532Z INFO:aiogram.event:Update id=81060100 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:26:33.873202581Z 2026-08-12 13:26:33.872 | INFO     | handlers:echo_handler:435 - -1000 син*45.10
+telegram_bot  | 2026-08-12T10:26:33.873574975Z 2026-08-12 13:26:33.873 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=-1000, currency=usdnew, rate=45.1
+telegram_bot  | 2026-08-12T10:26:34.002944900Z 2026-08-12 13:26:34.002 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная продажа
+telegram_bot  | 2026-08-12T10:26:34.003248119Z INFO:aiogram.event:Update id=81060101 is handled. Duration 131 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:28:36.647481807Z 2026-08-12 13:28:36.647 | INFO     | handlers:echo_handler:435 - +1100* 44.95
+telegram_bot  | 2026-08-12T10:28:36.647897075Z INFO:aiogram.event:Update id=81060102 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:34:05.304594229Z 2026-08-12 13:34:05.304 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T10:34:05.304630109Z 🇺🇸/🇺🇦 USD: 44.80/44.90 білий 
+telegram_bot  | 2026-08-12T10:34:05.304633646Z 🇺🇸/🇺🇦 USD: 44.90/45.00 синій 💙 
+telegram_bot  | 2026-08-12T10:34:05.304649907Z 🇪🇺/🇺🇦 EUR: 51.80/51.90
+telegram_bot  | 2026-08-12T10:34:05.304653514Z 
+telegram_bot  | 2026-08-12T10:34:05.304656109Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T10:34:05.304658754Z 🇺🇸/🇪🇺 $/€: 1.153/1.156 білий 
+telegram_bot  | 2026-08-12T10:34:05.304661390Z 🇺🇸/🇪🇺 $/€: 1.150/1.154 синий 💙
+telegram_bot  | 2026-08-12T10:34:05.304664105Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T10:34:05.304666730Z 🇺🇸/🇨🇭 $/₣: 1.226/1.235
+telegram_bot  | 2026-08-12T10:34:05.304669285Z  
+telegram_bot  | 2026-08-12T10:34:05.304671820Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T10:34:05.304674696Z 
+telegram_bot  | 2026-08-12T10:34:05.304677190Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T10:34:05.304690135Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T10:34:05.304692420Z 🇨🇭/🇺🇦 CHF: 55.05/55.40
+telegram_bot  | 2026-08-12T10:34:05.304694614Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T10:34:05.304696888Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T10:34:05.304699223Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T10:34:05.304701497Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T10:34:05.304703701Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T10:34:05.304705956Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T10:34:05.304708180Z 
+telegram_bot  | 2026-08-12T10:34:05.304710404Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T10:34:05.304713170Z                                                                             
+telegram_bot  | 2026-08-12T10:34:05.304715494Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T10:34:05.304717979Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T10:34:05.304720273Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T10:34:05.304722729Z                                                                          
+telegram_bot  | 2026-08-12T10:34:05.304725705Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T10:34:05.304728791Z 
+telegram_bot  | 2026-08-12T10:34:05.304730895Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T10:34:05.304733199Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T10:34:05.304735474Z 
+telegram_bot  | 2026-08-12T10:34:05.304737548Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T10:34:05.304739862Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T10:34:05.388017631Z 2026-08-12 13:34:05.387 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.80', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:34:05.416109653Z 2026-08-12 13:34:05.415 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.80', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:34:05.446217138Z 2026-08-12 13:34:05.446 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.80', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:34:05.447138086Z 2026-08-12 13:34:05.447 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.63 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.60 / 44.90</b> білий
+telegram_bot  | 2026-08-12T10:34:05.447156040Z 
+telegram_bot  | 2026-08-12T10:34:05.477249659Z 2026-08-12 13:34:05.477 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.60', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:34:05.507312146Z 2026-08-12 13:34:05.507 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.80', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:34:05.541341312Z 2026-08-12 13:34:05.541 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.80', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:34:05.571636150Z 2026-08-12 13:34:05.571 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.80', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:34:05.572319847Z 2026-08-12 13:34:05.572 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T10:34:05.572328814Z 
+telegram_bot  | 2026-08-12T10:34:05.572536006Z 2026-08-12 13:34:05.572 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T10:34:05.572542819Z 
+telegram_bot  | 2026-08-12T10:34:05.572545204Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T10:34:05.572547668Z 
+telegram_bot  | 2026-08-12T10:34:05.572760091Z 2026-08-12 13:34:05.572 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T10:34:05.572767526Z 
+telegram_bot  | 2026-08-12T10:34:05.572976140Z 2026-08-12 13:34:05.572 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T10:34:05.572983484Z 
+telegram_bot  | 2026-08-12T10:34:05.573182070Z 2026-08-12 13:34:05.573 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T10:34:05.573189224Z 
+telegram_bot  | 2026-08-12T10:34:05.573386116Z 2026-08-12 13:34:05.573 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T10:34:05.573393170Z 
+telegram_bot  | 2026-08-12T10:34:05.573591514Z 2026-08-12 13:34:05.573 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T10:34:05.573597967Z 
+telegram_bot  | 2026-08-12T10:34:05.573794158Z 2026-08-12 13:34:05.573 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T10:34:05.573801212Z 
+telegram_bot  | 2026-08-12T10:34:05.574012662Z 2026-08-12 13:34:05.573 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T10:34:05.574019505Z 
+telegram_bot  | 2026-08-12T10:34:05.574234743Z 2026-08-12 13:34:05.574 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T10:34:05.574241306Z 
+telegram_bot  | 2026-08-12T10:34:05.574604621Z 2026-08-12 13:34:05.574 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T10:34:05.574622175Z 
+telegram_bot  | 2026-08-12T10:34:05.574814087Z 2026-08-12 13:34:05.574 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T10:34:05.574821472Z 
+telegram_bot  | 2026-08-12T10:34:05.574823836Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T10:34:05.574826241Z 
+telegram_bot  | 2026-08-12T10:34:06.064749566Z INFO:aiogram.event:Update id=81060103 is handled. Duration 760 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:40:10.072154402Z 2026-08-12 13:40:10.071 | INFO     | handlers:echo_handler:435 - +2450 дол син*44,93 договор татьяна
+telegram_bot  | 2026-08-12T10:40:10.072472921Z INFO:aiogram.event:Update id=81060104 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:40:27.592484018Z 2026-08-12 13:40:27.592 | INFO     | handlers:echo_handler:435 - ок
+telegram_bot  | 2026-08-12T10:40:27.592774302Z INFO:aiogram.event:Update id=81060105 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:40:39.991418908Z 2026-08-12 13:40:39.991 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T10:40:39.991486490Z 🇺🇸/🇺🇦 USD: 44.82/44.90 білий 
+telegram_bot  | 2026-08-12T10:40:39.991490597Z 🇺🇸/🇺🇦 USD: 44.90/45.00 синій 💙 
+telegram_bot  | 2026-08-12T10:40:39.991493573Z 🇪🇺/🇺🇦 EUR: 51.75/51.87
+telegram_bot  | 2026-08-12T10:40:39.991496228Z 
+telegram_bot  | 2026-08-12T10:40:39.991498753Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T10:40:39.991501418Z 🇺🇸/🇪🇺 $/€: 1.153/1.156 білий 
+telegram_bot  | 2026-08-12T10:40:39.991504204Z 🇺🇸/🇪🇺 $/€: 1.150/1.154 синий 💙
+telegram_bot  | 2026-08-12T10:40:39.991506799Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T10:40:39.991509514Z 🇺🇸/🇨🇭 $/₣: 1.226/1.235
+telegram_bot  | 2026-08-12T10:40:39.991512039Z  
+telegram_bot  | 2026-08-12T10:40:39.991514634Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T10:40:39.991517459Z 
+telegram_bot  | 2026-08-12T10:40:39.991519974Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T10:40:39.991522679Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T10:40:39.991525224Z 🇨🇭/🇺🇦 CHF: 55.05/55.40
+telegram_bot  | 2026-08-12T10:40:39.991527729Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T10:40:39.991540965Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T10:40:39.991544041Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T10:40:39.991546676Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T10:40:39.991549211Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T10:40:39.991551836Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T10:40:39.991554381Z 
+telegram_bot  | 2026-08-12T10:40:39.991557016Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T10:40:39.991573197Z                                                                             
+telegram_bot  | 2026-08-12T10:40:39.991575642Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T10:40:39.991578077Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T10:40:39.991580451Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T10:40:39.991582906Z                                                                          
+telegram_bot  | 2026-08-12T10:40:39.991586453Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T10:40:39.991589519Z 
+telegram_bot  | 2026-08-12T10:40:39.991591673Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T10:40:39.991593968Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T10:40:39.991596223Z 
+telegram_bot  | 2026-08-12T10:40:39.991598297Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T10:40:39.991601082Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T10:40:40.085493575Z 2026-08-12 13:40:40.085 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.82', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:40:40.113010321Z 2026-08-12 13:40:40.112 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.82', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:40:40.143964052Z 2026-08-12 13:40:40.143 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.82', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:40:40.144684641Z 2026-08-12 13:40:40.144 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.60 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.62 / 44.90</b> білий
+telegram_bot  | 2026-08-12T10:40:40.144694229Z 
+telegram_bot  | 2026-08-12T10:40:40.172056777Z 2026-08-12 13:40:40.171 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.62', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:40:40.199754575Z 2026-08-12 13:40:40.199 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.82', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:40:40.230421409Z 2026-08-12 13:40:40.230 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.82', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:40:40.257592806Z 2026-08-12 13:40:40.257 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.82', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T10:40:40.258268898Z 2026-08-12 13:40:40.258 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T10:40:40.258287103Z 
+telegram_bot  | 2026-08-12T10:40:40.258526138Z 2026-08-12 13:40:40.258 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T10:40:40.258533392Z 
+telegram_bot  | 2026-08-12T10:40:40.258535867Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T10:40:40.258538282Z 
+telegram_bot  | 2026-08-12T10:40:40.258737638Z 2026-08-12 13:40:40.258 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T10:40:40.258745073Z 
+telegram_bot  | 2026-08-12T10:40:40.258964088Z 2026-08-12 13:40:40.258 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T10:40:40.258970560Z 
+telegram_bot  | 2026-08-12T10:40:40.259167853Z 2026-08-12 13:40:40.259 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T10:40:40.259174216Z 
+telegram_bot  | 2026-08-12T10:40:40.259376529Z 2026-08-12 13:40:40.259 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T10:40:40.259384845Z 
+telegram_bot  | 2026-08-12T10:40:40.259624139Z 2026-08-12 13:40:40.259 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T10:40:40.259631534Z 
+telegram_bot  | 2026-08-12T10:40:40.259826262Z 2026-08-12 13:40:40.259 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T10:40:40.259832514Z 
+telegram_bot  | 2026-08-12T10:40:40.260047812Z 2026-08-12 13:40:40.259 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T10:40:40.260054896Z 
+telegram_bot  | 2026-08-12T10:40:40.260273240Z 2026-08-12 13:40:40.260 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T10:40:40.260280444Z 
+telegram_bot  | 2026-08-12T10:40:40.260691051Z 2026-08-12 13:40:40.260 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T10:40:40.260698947Z 
+telegram_bot  | 2026-08-12T10:40:40.260897672Z 2026-08-12 13:40:40.260 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T10:40:40.260904486Z 
+telegram_bot  | 2026-08-12T10:40:40.260906800Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T10:40:40.260909235Z 
+telegram_bot  | 2026-08-12T10:40:40.726129646Z INFO:aiogram.event:Update id=81060106 is handled. Duration 734 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:53:46.013486549Z 2026-08-12 13:53:46.013 | INFO     | handlers:echo_handler:435 - -1000 ев*1,155 за син дол договор
+telegram_bot  | 2026-08-12T10:53:46.013983553Z INFO:aiogram.event:Update id=81060107 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T10:54:13.108612735Z 2026-08-12 13:54:13.108 | INFO     | handlers:echo_handler:435 - да
+telegram_bot  | 2026-08-12T10:54:13.109319878Z INFO:aiogram.event:Update id=81060108 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:00:52.659693788Z 2026-08-12 14:00:52.659 | INFO     | handlers:echo_handler:435 - +1000 син*44,9
+telegram_bot  | 2026-08-12T11:00:52.660318231Z 2026-08-12 14:00:52.660 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=1000, currency=usdnew, rate=44.9
+telegram_bot  | 2026-08-12T11:00:52.896128961Z 2026-08-12 14:00:52.895 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная покупка
+telegram_bot  | 2026-08-12T11:00:52.896524689Z INFO:aiogram.event:Update id=81060109 is handled. Duration 238 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:12:32.473604162Z 2026-08-12 14:12:32.473 | INFO     | handlers:echo_handler:435 - продала
+telegram_bot  | 2026-08-12T11:12:32.473624882Z INFO:aiogram.event:Update id=81060110 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:26:17.742610535Z 2026-08-12 14:26:17.742 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T11:26:17.742740467Z 🇺🇸/🇺🇦 USD: 44.82/44.90 білий 
+telegram_bot  | 2026-08-12T11:26:17.742744886Z 🇺🇸/🇺🇦 USD: 44.90/45.00 синій 💙 
+telegram_bot  | 2026-08-12T11:26:17.742748493Z 🇪🇺/🇺🇦 EUR: 51.75/51.87
+telegram_bot  | 2026-08-12T11:26:17.742751739Z 
+telegram_bot  | 2026-08-12T11:26:17.742754935Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T11:26:17.742758311Z 🇺🇸/🇪🇺 $/€: 1.153/1.156 білий 
+telegram_bot  | 2026-08-12T11:26:17.742761678Z 🇺🇸/🇪🇺 $/€: 1.150/1.154 синий 💙
+telegram_bot  | 2026-08-12T11:26:17.742764934Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T11:26:17.742768110Z 🇺🇸/🇨🇭 $/₣: 1.225/1.235
+telegram_bot  | 2026-08-12T11:26:17.742771246Z  
+telegram_bot  | 2026-08-12T11:26:17.742774412Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T11:26:17.742777879Z 
+telegram_bot  | 2026-08-12T11:26:17.742780836Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T11:26:17.742784032Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T11:26:17.742787559Z 🇨🇭/🇺🇦 CHF: 55.00/55.38
+telegram_bot  | 2026-08-12T11:26:17.742790745Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T11:26:17.742857144Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T11:26:17.742860861Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T11:26:17.742864127Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T11:26:17.742867363Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T11:26:17.742870549Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T11:26:17.742873655Z 
+telegram_bot  | 2026-08-12T11:26:17.742876902Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T11:26:17.742891992Z                                                                             
+telegram_bot  | 2026-08-12T11:26:17.742894877Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T11:26:17.742897873Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T11:26:17.742900698Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T11:26:17.742903634Z                                                                          
+telegram_bot  | 2026-08-12T11:26:17.742907271Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T11:26:17.742911359Z 
+telegram_bot  | 2026-08-12T11:26:17.742913964Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T11:26:17.742974351Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T11:26:17.742977086Z 
+telegram_bot  | 2026-08-12T11:26:17.742979611Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T11:26:17.742982557Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T11:26:17.802262505Z 2026-08-12 14:26:17.802 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:26:17.802522771Z 2026-08-12 14:26:17.802 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:26:17.802752517Z 2026-08-12 14:26:17.802 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:26:17.803373994Z 2026-08-12 14:26:17.803 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.62 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.62 / 44.90</b> білий
+telegram_bot  | 2026-08-12T11:26:17.803382551Z 
+telegram_bot  | 2026-08-12T11:26:17.803595464Z 2026-08-12 14:26:17.803 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.62/44.90
+telegram_bot  | 2026-08-12T11:26:17.803818306Z 2026-08-12 14:26:17.803 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:26:17.804047091Z 2026-08-12 14:26:17.803 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:26:17.804284914Z 2026-08-12 14:26:17.804 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:26:17.804520721Z 2026-08-12 14:26:17.804 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T11:26:17.804528276Z 
+telegram_bot  | 2026-08-12T11:26:17.804823349Z 2026-08-12 14:26:17.804 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T11:26:17.804844020Z 
+telegram_bot  | 2026-08-12T11:26:17.804846935Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T11:26:17.804849741Z 
+telegram_bot  | 2026-08-12T11:26:17.805106599Z 2026-08-12 14:26:17.804 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T11:26:17.805114113Z 
+telegram_bot  | 2026-08-12T11:26:17.805363318Z 2026-08-12 14:26:17.805 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T11:26:17.805370392Z 
+telegram_bot  | 2026-08-12T11:26:17.805626008Z 2026-08-12 14:26:17.805 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T11:26:17.805633141Z 
+telegram_bot  | 2026-08-12T11:26:17.805867648Z 2026-08-12 14:26:17.805 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T11:26:17.805874822Z 
+telegram_bot  | 2026-08-12T11:26:17.806136609Z 2026-08-12 14:26:17.806 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T11:26:17.806144034Z 
+telegram_bot  | 2026-08-12T11:26:17.806388589Z 2026-08-12 14:26:17.806 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T11:26:17.806395843Z 
+telegram_bot  | 2026-08-12T11:26:17.806634477Z 2026-08-12 14:26:17.806 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T11:26:17.806641610Z 
+telegram_bot  | 2026-08-12T11:26:17.806907818Z 2026-08-12 14:26:17.806 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T11:26:17.806914831Z 
+telegram_bot  | 2026-08-12T11:26:17.807343244Z 2026-08-12 14:26:17.807 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T11:26:17.807350548Z 
+telegram_bot  | 2026-08-12T11:26:17.807588770Z 2026-08-12 14:26:17.807 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T11:26:17.807596034Z 
+telegram_bot  | 2026-08-12T11:26:17.807598790Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T11:26:17.807601755Z 
+telegram_bot  | 2026-08-12T11:26:18.311142631Z INFO:aiogram.event:Update id=81060111 is handled. Duration 568 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:26:39.963629459Z 2026-08-12 14:26:39.963 | INFO     | handlers:echo_handler:435 - александр 
+telegram_bot  | 2026-08-12T11:26:39.963677423Z 12200*45.00
+telegram_bot  | 2026-08-12T11:26:39.963680899Z продать синий
+telegram_bot  | 2026-08-12T11:26:39.963922298Z INFO:aiogram.event:Update id=81060112 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:26:42.009111062Z 2026-08-12 14:26:42.008 | INFO     | handlers:echo_handler:435 - +1600 б*44,82
+telegram_bot  | 2026-08-12T11:26:42.009396066Z 2026-08-12 14:26:42.009 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=1600, currency=usd, rate=44.82
+telegram_bot  | 2026-08-12T11:26:42.099221562Z 2026-08-12 14:26:42.098 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная покупка
+telegram_bot  | 2026-08-12T11:26:42.099615226Z INFO:aiogram.event:Update id=81060113 is handled. Duration 91 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:33:46.714996313Z 2026-08-12 14:33:46.714 | INFO     | handlers:echo_handler:435 - +1000 б*44,82
+telegram_bot  | 2026-08-12T11:33:46.715023276Z 2026-08-12 14:33:46.714 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=1000, currency=usd, rate=44.82
+telegram_bot  | 2026-08-12T11:33:46.840588859Z 2026-08-12 14:33:46.840 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная покупка
+telegram_bot  | 2026-08-12T11:33:46.840877689Z INFO:aiogram.event:Update id=81060114 is handled. Duration 128 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:34:09.998734736Z 2026-08-12 14:34:09.998 | INFO     | handlers:echo_handler:435 - - 1500с * 45
+telegram_bot  | 2026-08-12T11:34:09.999122730Z INFO:aiogram.event:Update id=81060115 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:34:35.910007324Z 2026-08-12 14:34:35.909 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T11:34:35.910043113Z 🇺🇸/🇺🇦 USD: 44.82/44.90 білий 
+telegram_bot  | 2026-08-12T11:34:35.910046560Z 🇺🇸/🇺🇦 USD: 44.92/45.00 синій 💙 
+telegram_bot  | 2026-08-12T11:34:35.910060889Z 🇪🇺/🇺🇦 EUR: 51.75/51.87
+telegram_bot  | 2026-08-12T11:34:35.910064045Z 
+telegram_bot  | 2026-08-12T11:34:35.910066690Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T11:34:35.910069405Z 🇺🇸/🇪🇺 $/€: 1.153/1.156 білий 
+telegram_bot  | 2026-08-12T11:34:35.910072060Z 🇺🇸/🇪🇺 $/€: 1.150/1.154 синий 💙
+telegram_bot  | 2026-08-12T11:34:35.910074735Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T11:34:35.910077340Z 🇺🇸/🇨🇭 $/₣: 1.225/1.235
+telegram_bot  | 2026-08-12T11:34:35.910079905Z  
+telegram_bot  | 2026-08-12T11:34:35.910082450Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T11:34:35.910085275Z 
+telegram_bot  | 2026-08-12T11:34:35.910087810Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T11:34:35.910090455Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T11:34:35.910093010Z 🇨🇭/🇺🇦 CHF: 55.00/55.38
+telegram_bot  | 2026-08-12T11:34:35.910096066Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T11:34:35.910098731Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T11:34:35.910101447Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T11:34:35.910104153Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T11:34:35.910106708Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T11:34:35.910109383Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T11:34:35.910123370Z 
+telegram_bot  | 2026-08-12T11:34:35.910125784Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T11:34:35.910128580Z                                                                             
+telegram_bot  | 2026-08-12T11:34:35.910139992Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T11:34:35.910142537Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T11:34:35.910144941Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T11:34:35.910147476Z                                                                          
+telegram_bot  | 2026-08-12T11:34:35.910150752Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T11:34:35.910153899Z 
+telegram_bot  | 2026-08-12T11:34:35.910156003Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T11:34:35.910158417Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T11:34:35.910160643Z 
+telegram_bot  | 2026-08-12T11:34:35.910162807Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T11:34:35.910165151Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T11:34:35.924843481Z 2026-08-12 14:34:35.924 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:34:35.925130217Z 2026-08-12 14:34:35.925 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:34:35.925348080Z 2026-08-12 14:34:35.925 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:34:35.925584420Z 2026-08-12 14:34:35.925 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.62 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.62 / 44.90</b> білий
+telegram_bot  | 2026-08-12T11:34:35.925592425Z 
+telegram_bot  | 2026-08-12T11:34:35.925799567Z 2026-08-12 14:34:35.925 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.62/44.90
+telegram_bot  | 2026-08-12T11:34:35.926027760Z 2026-08-12 14:34:35.925 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:34:35.926258088Z 2026-08-12 14:34:35.926 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:34:35.926485099Z 2026-08-12 14:34:35.926 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:34:35.926719514Z 2026-08-12 14:34:35.926 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T11:34:35.926736567Z 
+telegram_bot  | 2026-08-12T11:34:35.926998326Z 2026-08-12 14:34:35.926 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T11:34:35.927005810Z 
+telegram_bot  | 2026-08-12T11:34:35.927008936Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T11:34:35.927012533Z 
+telegram_bot  | 2026-08-12T11:34:35.927256156Z 2026-08-12 14:34:35.927 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T11:34:35.927263340Z 
+telegram_bot  | 2026-08-12T11:34:35.927471464Z 2026-08-12 14:34:35.927 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T11:34:35.927478518Z 
+telegram_bot  | 2026-08-12T11:34:35.927692283Z 2026-08-12 14:34:35.927 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T11:34:35.927701191Z 
+telegram_bot  | 2026-08-12T11:34:35.927899616Z 2026-08-12 14:34:35.927 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T11:34:35.927906229Z 
+telegram_bot  | 2026-08-12T11:34:35.928104865Z 2026-08-12 14:34:35.928 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T11:34:35.928111397Z 
+telegram_bot  | 2026-08-12T11:34:35.928307058Z 2026-08-12 14:34:35.928 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T11:34:35.928314452Z 
+telegram_bot  | 2026-08-12T11:34:35.928507657Z 2026-08-12 14:34:35.928 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T11:34:35.928514059Z 
+telegram_bot  | 2026-08-12T11:34:35.928746701Z 2026-08-12 14:34:35.928 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T11:34:35.928754106Z 
+telegram_bot  | 2026-08-12T11:34:35.929115648Z 2026-08-12 14:34:35.929 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T11:34:35.929122421Z 
+telegram_bot  | 2026-08-12T11:34:35.929317209Z 2026-08-12 14:34:35.929 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T11:34:35.929324223Z 
+telegram_bot  | 2026-08-12T11:34:35.929326628Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T11:34:35.929329023Z 
+telegram_bot  | 2026-08-12T11:34:36.391441673Z INFO:aiogram.event:Update id=81060116 is handled. Duration 481 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:36:32.417105738Z 2026-08-12 14:36:32.416 | INFO     | handlers:echo_handler:435 - +1100 б*44,82
+telegram_bot  | 2026-08-12T11:36:32.417401734Z 2026-08-12 14:36:32.417 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=1100, currency=usd, rate=44.82
+telegram_bot  | 2026-08-12T11:36:32.569747180Z 2026-08-12 14:36:32.569 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная покупка
+telegram_bot  | 2026-08-12T11:36:32.570175873Z INFO:aiogram.event:Update id=81060117 is handled. Duration 154 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:41:59.229336270Z 2026-08-12 14:41:59.226 | INFO     | handlers:echo_handler:435 - -3850 ев*51,87
+telegram_bot  | 2026-08-12T11:41:59.229355788Z 2026-08-12 14:41:59.226 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=-3850, currency=eur, rate=51.87
+telegram_bot  | 2026-08-12T11:41:59.282779948Z 2026-08-12 14:41:59.282 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Продажа: 51.9
+telegram_bot  | 2026-08-12T11:41:59.283045421Z INFO:aiogram.event:Update id=81060118 is handled. Duration 57 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:46:37.341267832Z 2026-08-12 14:46:37.340 | INFO     | handlers:echo_handler:435 - +6200 син*44,95, договор с виталиком
+telegram_bot  | 2026-08-12T11:46:37.341288782Z INFO:aiogram.event:Update id=81060119 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:46:50.592009321Z 2026-08-12 14:46:50.591 | INFO     | handlers:echo_handler:435 - ок
+telegram_bot  | 2026-08-12T11:46:50.592282028Z INFO:aiogram.event:Update id=81060120 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:47:51.795971696Z 2026-08-12 14:47:51.795 | INFO     | handlers:echo_handler:435 - да
+telegram_bot  | 2026-08-12T11:47:51.796247401Z INFO:aiogram.event:Update id=81060121 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:48:06.244119156Z 2026-08-12 14:48:06.243 | INFO     | handlers:echo_handler:435 - андрей наш
+telegram_bot  | 2026-08-12T11:48:06.244149906Z 10т 45.00 купить синий
+telegram_bot  | 2026-08-12T11:48:06.244406203Z INFO:aiogram.event:Update id=81060122 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:48:49.369300379Z 2026-08-12 14:48:49.369 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T11:48:49.369332291Z 🇺🇸/🇺🇦 USD: 44.82/44.90 білий 
+telegram_bot  | 2026-08-12T11:48:49.369336149Z 🇺🇸/🇺🇦 USD: 44.93/45.00 синій 💙 
+telegram_bot  | 2026-08-12T11:48:49.369339034Z 🇪🇺/🇺🇦 EUR: 51.75/51.87
+telegram_bot  | 2026-08-12T11:48:49.369341659Z 
+telegram_bot  | 2026-08-12T11:48:49.369344224Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T11:48:49.369347040Z 🇺🇸/🇪🇺 $/€: 1.153/1.156 білий 
+telegram_bot  | 2026-08-12T11:48:49.369349775Z 🇺🇸/🇪🇺 $/€: 1.150/1.154 синий 💙
+telegram_bot  | 2026-08-12T11:48:49.369352470Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T11:48:49.369355065Z 🇺🇸/🇨🇭 $/₣: 1.225/1.235
+telegram_bot  | 2026-08-12T11:48:49.369357650Z  
+telegram_bot  | 2026-08-12T11:48:49.369360195Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T11:48:49.369363101Z 
+telegram_bot  | 2026-08-12T11:48:49.369365555Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T11:48:49.369368211Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T11:48:49.369370765Z 🇨🇭/🇺🇦 CHF: 55.00/55.38
+telegram_bot  | 2026-08-12T11:48:49.369384572Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T11:48:49.369386887Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T11:48:49.369389221Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T11:48:49.369391465Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T11:48:49.369393629Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T11:48:49.369395864Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T11:48:49.369398068Z 
+telegram_bot  | 2026-08-12T11:48:49.369400262Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T11:48:49.369403019Z                                                                             
+telegram_bot  | 2026-08-12T11:48:49.369405293Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T11:48:49.369407738Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T11:48:49.369410092Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T11:48:49.369412557Z                                                                          
+telegram_bot  | 2026-08-12T11:48:49.369415593Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T11:48:49.369418799Z 
+telegram_bot  | 2026-08-12T11:48:49.369420883Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T11:48:49.369423177Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T11:48:49.369425372Z 
+telegram_bot  | 2026-08-12T11:48:49.369427466Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T11:48:49.369430000Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T11:48:49.432750282Z 2026-08-12 14:48:49.432 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:48:49.432977503Z 2026-08-12 14:48:49.432 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:48:49.433157531Z 2026-08-12 14:48:49.433 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:48:49.433369302Z 2026-08-12 14:48:49.433 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.62 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.62 / 44.90</b> білий
+telegram_bot  | 2026-08-12T11:48:49.433376746Z 
+telegram_bot  | 2026-08-12T11:48:49.433549180Z 2026-08-12 14:48:49.433 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.62/44.90
+telegram_bot  | 2026-08-12T11:48:49.434141086Z 2026-08-12 14:48:49.434 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:48:49.434360672Z 2026-08-12 14:48:49.434 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:48:49.434567433Z 2026-08-12 14:48:49.434 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.82/44.90
+telegram_bot  | 2026-08-12T11:48:49.434798761Z 2026-08-12 14:48:49.434 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T11:48:49.434808400Z 
+telegram_bot  | 2026-08-12T11:48:49.435066539Z 2026-08-12 14:48:49.434 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T11:48:49.435074976Z 
+telegram_bot  | 2026-08-12T11:48:49.435077510Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T11:48:49.435079925Z 
+telegram_bot  | 2026-08-12T11:48:49.435336733Z 2026-08-12 14:48:49.435 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T11:48:49.435344248Z 
+telegram_bot  | 2026-08-12T11:48:49.435543293Z 2026-08-12 14:48:49.435 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T11:48:49.435550397Z 
+telegram_bot  | 2026-08-12T11:48:49.435761035Z 2026-08-12 14:48:49.435 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T11:48:49.435769321Z 
+telegram_bot  | 2026-08-12T11:48:49.435977174Z 2026-08-12 14:48:49.435 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T11:48:49.435984648Z 
+telegram_bot  | 2026-08-12T11:48:49.436187191Z 2026-08-12 14:48:49.436 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T11:48:49.436194295Z 
+telegram_bot  | 2026-08-12T11:48:49.436420283Z 2026-08-12 14:48:49.436 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T11:48:49.436428439Z 
+telegram_bot  | 2026-08-12T11:48:49.436627554Z 2026-08-12 14:48:49.436 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T11:48:49.436634176Z 
+telegram_bot  | 2026-08-12T11:48:49.436890684Z 2026-08-12 14:48:49.436 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T11:48:49.436898199Z 
+telegram_bot  | 2026-08-12T11:48:49.437292122Z 2026-08-12 14:48:49.437 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T11:48:49.437301450Z 
+telegram_bot  | 2026-08-12T11:48:49.437533349Z 2026-08-12 14:48:49.437 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T11:48:49.437545543Z 
+telegram_bot  | 2026-08-12T11:48:49.437548027Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T11:48:49.437550412Z 
+telegram_bot  | 2026-08-12T11:48:49.966473650Z INFO:aiogram.event:Update id=81060123 is handled. Duration 597 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:52:30.180911759Z 2026-08-12 14:52:30.180 | INFO     | handlers:echo_handler:435 - ск б есть ?
+telegram_bot  | 2026-08-12T11:52:30.181199286Z INFO:aiogram.event:Update id=81060124 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:53:21.014302621Z 2026-08-12 14:53:21.014 | INFO     | handlers:echo_handler:435 - 4200 у меня
+telegram_bot  | 2026-08-12T11:53:21.014578126Z INFO:aiogram.event:Update id=81060125 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T11:54:42.048612145Z 2026-08-12 14:54:42.048 | DEBUG    | handlers:channel_handler:405 - 
+telegram_bot  | 2026-08-12T11:54:42.049013794Z INFO:aiogram.event:Update id=81060126 is handled. Duration 0 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:03:28.905930186Z 2026-08-12 15:03:28.905 | INFO     | handlers:echo_handler:435 - +830 грн проверка
+telegram_bot  | 2026-08-12T12:03:28.906250949Z INFO:aiogram.event:Update id=81060127 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:04:12.404624228Z 2026-08-12 15:04:12.404 | INFO     | handlers:echo_handler:435 - 7500 у меня
+telegram_bot  | 2026-08-12T12:04:12.404930322Z INFO:aiogram.event:Update id=81060128 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:06:16.294360224Z 2026-08-12 15:06:16.293 | INFO     | handlers:echo_handler:435 - продаю 13300
+telegram_bot  | 2026-08-12T12:06:16.294381745Z INFO:aiogram.event:Update id=81060129 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:06:24.108877362Z 2026-08-12 15:06:24.108 | INFO     | handlers:echo_handler:435 - ок
+telegram_bot  | 2026-08-12T12:06:24.109398142Z INFO:aiogram.event:Update id=81060130 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:06:37.681716058Z 2026-08-12 15:06:37.681 | INFO     | handlers:echo_handler:435 - саша
+telegram_bot  | 2026-08-12T12:06:37.681763950Z 9700*45.00 продать синий
+telegram_bot  | 2026-08-12T12:06:37.682005459Z INFO:aiogram.event:Update id=81060131 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:06:52.961819797Z 2026-08-12 15:06:52.961 | INFO     | handlers:echo_handler:435 - -9000 б*44,90, китаец
+telegram_bot  | 2026-08-12T12:06:52.962123777Z INFO:aiogram.event:Update id=81060132 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:07:05.346180663Z 2026-08-12 15:07:05.345 | INFO     | handlers:echo_handler:435 - белый ок
+telegram_bot  | 2026-08-12T12:07:05.346470847Z INFO:aiogram.event:Update id=81060133 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:09:37.363030306Z 2026-08-12 15:09:37.362 | INFO     | handlers:echo_handler:435 - +500 син*44,93
+telegram_bot  | 2026-08-12T12:09:37.363415543Z 2026-08-12 15:09:37.363 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=500, currency=usdnew, rate=44.93
+telegram_bot  | 2026-08-12T12:09:37.427876339Z 2026-08-12 15:09:37.427 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T12:09:37.428214004Z INFO:aiogram.event:Update id=81060134 is handled. Duration 66 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:10:05.565419048Z 2026-08-12 15:10:05.565 | INFO     | handlers:echo_handler:435 - ок
+telegram_bot  | 2026-08-12T12:10:05.565729440Z INFO:aiogram.event:Update id=81060135 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:17:15.641773811Z 2026-08-12 15:17:15.641 | INFO     | handlers:echo_handler:435 - +1150 син*44,93
+telegram_bot  | 2026-08-12T12:17:15.641807687Z 2026-08-12 15:17:15.641 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=1150, currency=usdnew, rate=44.93
+telegram_bot  | 2026-08-12T12:17:15.704061231Z 2026-08-12 15:17:15.703 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T12:17:15.704337068Z INFO:aiogram.event:Update id=81060136 is handled. Duration 64 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:18:40.420092292Z 2026-08-12 15:18:40.419 | INFO     | handlers:echo_handler:435 - +1200
+telegram_bot  | 2026-08-12T12:18:40.420395373Z INFO:aiogram.event:Update id=81060137 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:21:11.167595404Z 2026-08-12 15:21:11.167 | INFO     | handlers:echo_handler:435 - 44500 дол бел на син. сколько доплата?
+telegram_bot  | 2026-08-12T12:21:11.167911169Z INFO:aiogram.event:Update id=81060138 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:21:25.197077131Z 2026-08-12 15:21:25.196 | INFO     | handlers:echo_handler:435 - 18 коп
+telegram_bot  | 2026-08-12T12:21:25.197110366Z INFO:aiogram.event:Update id=81060139 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:21:39.328025626Z 2026-08-12 15:21:39.327 | INFO     | handlers:echo_handler:435 - это с кадора могу взять белый +доплата, а как привезут синий спустятся и заберут
+telegram_bot  | 2026-08-12T12:21:39.328067367Z INFO:aiogram.event:Update id=81060140 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:21:59.200111823Z 2026-08-12 15:21:59.199 | INFO     | handlers:echo_handler:435 - ок
+telegram_bot  | 2026-08-12T12:21:59.200407338Z INFO:aiogram.event:Update id=81060141 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:23:07.903440804Z 2026-08-12 15:23:07.903 | INFO     | handlers:echo_handler:435 - пусть везут синий
+telegram_bot  | 2026-08-12T12:23:07.903823759Z INFO:aiogram.event:Update id=81060142 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:23:12.654605419Z 2026-08-12 15:23:12.654 | INFO     | handlers:echo_handler:435 - тел возьми
+telegram_bot  | 2026-08-12T12:23:12.655126553Z INFO:aiogram.event:Update id=81060143 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:23:17.644560144Z 2026-08-12 15:23:17.644 | INFO     | handlers:echo_handler:435 - да чуть попозже
+telegram_bot  | 2026-08-12T12:23:17.645003656Z INFO:aiogram.event:Update id=81060144 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:23:22.321913778Z 2026-08-12 15:23:22.321 | INFO     | handlers:echo_handler:435 - есть
+telegram_bot  | 2026-08-12T12:23:22.322535486Z INFO:aiogram.event:Update id=81060145 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:27:08.074351353Z 2026-08-12 15:27:08.073 | INFO     | handlers:echo_handler:435 - плюс минус через сколько?
+telegram_bot  | 2026-08-12T12:27:08.074791177Z INFO:aiogram.event:Update id=81060146 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:27:26.311268447Z 2026-08-12 15:27:26.311 | INFO     | handlers:echo_handler:435 - думаю мин 40
+telegram_bot  | 2026-08-12T12:27:26.311696940Z INFO:aiogram.event:Update id=81060147 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:27:26.570888618Z 2026-08-12 15:27:26.570 | INFO     | handlers:echo_handler:435 - +1000 евро*51,78
+telegram_bot  | 2026-08-12T12:27:26.571259670Z 2026-08-12 15:27:26.571 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=1000, currency=eur, rate=51.78
+telegram_bot  | 2026-08-12T12:27:26.818145693Z 2026-08-12 15:27:26.817 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная покупка
+telegram_bot  | 2026-08-12T12:27:26.818449795Z INFO:aiogram.event:Update id=81060148 is handled. Duration 249 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:29:34.258197661Z 2026-08-12 15:29:34.257 | INFO     | handlers:echo_handler:435 - обмен 42800 дол бел на син +18коп. доплата 7704грн
+telegram_bot  | 2026-08-12T12:29:34.258283689Z +445 грн проверка
+telegram_bot  | 2026-08-12T12:29:34.258682684Z INFO:aiogram.event:Update id=81060149 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:39:50.279412380Z 2026-08-12 15:39:50.279 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T12:39:50.279446967Z 🇺🇸/🇺🇦 USD: 44.83/44.90 білий 
+telegram_bot  | 2026-08-12T12:39:50.279450544Z 🇺🇸/🇺🇦 USD: 44.93/45.00 синій 💙 
+telegram_bot  | 2026-08-12T12:39:50.279453339Z 🇪🇺/🇺🇦 EUR: 51.78/51.90
+telegram_bot  | 2026-08-12T12:39:50.279468769Z 
+telegram_bot  | 2026-08-12T12:39:50.279471424Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T12:39:50.279474099Z 🇺🇸/🇪🇺 $/€: 1.153/1.156 білий 
+telegram_bot  | 2026-08-12T12:39:50.279476845Z 🇺🇸/🇪🇺 $/€: 1.150/1.154 синий 💙
+telegram_bot  | 2026-08-12T12:39:50.279479520Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T12:39:50.279482175Z 🇺🇸/🇨🇭 $/₣: 1.225/1.235
+telegram_bot  | 2026-08-12T12:39:50.279484780Z  
+telegram_bot  | 2026-08-12T12:39:50.279487335Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T12:39:50.279490261Z 
+telegram_bot  | 2026-08-12T12:39:50.279492746Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T12:39:50.279495361Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T12:39:50.279497916Z 🇨🇭/🇺🇦 CHF: 55.00/55.38
+telegram_bot  | 2026-08-12T12:39:50.279500451Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T12:39:50.279503026Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T12:39:50.279505741Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T12:39:50.279508386Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T12:39:50.279510951Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T12:39:50.279524838Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T12:39:50.279527142Z 
+telegram_bot  | 2026-08-12T12:39:50.279529397Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T12:39:50.279532142Z                                                                             
+telegram_bot  | 2026-08-12T12:39:50.279543886Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T12:39:50.279546501Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T12:39:50.279548865Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T12:39:50.279551360Z                                                                          
+telegram_bot  | 2026-08-12T12:39:50.279554586Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T12:39:50.279557662Z 
+telegram_bot  | 2026-08-12T12:39:50.279559746Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T12:39:50.279562081Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T12:39:50.279564335Z 
+telegram_bot  | 2026-08-12T12:39:50.279566399Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T12:39:50.279568984Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T12:39:50.363442101Z 2026-08-12 15:39:50.363 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.83', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T12:39:50.392002700Z 2026-08-12 15:39:50.391 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.83', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T12:39:50.423489798Z 2026-08-12 15:39:50.423 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.83', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T12:39:50.424180490Z 2026-08-12 15:39:50.424 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.62 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.63 / 44.90</b> білий
+telegram_bot  | 2026-08-12T12:39:50.424191872Z 
+telegram_bot  | 2026-08-12T12:39:50.451901509Z 2026-08-12 15:39:50.451 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.63', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T12:39:50.480929106Z 2026-08-12 15:39:50.480 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.83', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T12:39:50.524461846Z 2026-08-12 15:39:50.524 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.83', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T12:39:50.552857697Z 2026-08-12 15:39:50.552 | DEBUG    | functions.all_fun:edit_currency:75 - payload={'buy': '44.83', 'sell': '44.90', 'updatedAt': ''} 202
+telegram_bot  | 2026-08-12T12:39:50.553457692Z 2026-08-12 15:39:50.553 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T12:39:50.553466650Z 
+telegram_bot  | 2026-08-12T12:39:50.553677208Z 2026-08-12 15:39:50.553 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T12:39:50.553684153Z 
+telegram_bot  | 2026-08-12T12:39:50.553686547Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T12:39:50.553689032Z 
+telegram_bot  | 2026-08-12T12:39:50.553904521Z 2026-08-12 15:39:50.553 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T12:39:50.553911985Z 
+telegram_bot  | 2026-08-12T12:39:50.554117003Z 2026-08-12 15:39:50.554 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T12:39:50.554123707Z 
+telegram_bot  | 2026-08-12T12:39:50.554323304Z 2026-08-12 15:39:50.554 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T12:39:50.554330458Z 
+telegram_bot  | 2026-08-12T12:39:50.554536278Z 2026-08-12 15:39:50.554 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T12:39:50.554542870Z 
+telegram_bot  | 2026-08-12T12:39:50.554741467Z 2026-08-12 15:39:50.554 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T12:39:50.554748440Z 
+telegram_bot  | 2026-08-12T12:39:50.554965341Z 2026-08-12 15:39:50.554 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T12:39:50.554972435Z 
+telegram_bot  | 2026-08-12T12:39:50.555170941Z 2026-08-12 15:39:50.555 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T12:39:50.555178295Z 
+telegram_bot  | 2026-08-12T12:39:50.555403052Z 2026-08-12 15:39:50.555 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T12:39:50.555409955Z 
+telegram_bot  | 2026-08-12T12:39:50.555800905Z 2026-08-12 15:39:50.555 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T12:39:50.555808349Z 
+telegram_bot  | 2026-08-12T12:39:50.556344431Z 2026-08-12 15:39:50.556 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T12:39:50.556359069Z 
+telegram_bot  | 2026-08-12T12:39:50.556361624Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T12:39:50.556364209Z 
+telegram_bot  | 2026-08-12T12:39:51.023470404Z INFO:aiogram.event:Update id=81060150 is handled. Duration 744 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:45:42.988256310Z 2026-08-12 15:45:42.988 | INFO     | handlers:echo_handler:435 - +2900 син*44,93
+telegram_bot  | 2026-08-12T12:45:42.988306566Z +400 б*44,82
+telegram_bot  | 2026-08-12T12:45:42.988310685Z +100 б*44,5
+telegram_bot  | 2026-08-12T12:45:42.988313541Z договор
+telegram_bot  | 2026-08-12T12:45:42.988561512Z INFO:aiogram.event:Update id=81060151 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:46:32.127821287Z 2026-08-12 15:46:32.127 | INFO     | handlers:echo_handler:435 - ок
+telegram_bot  | 2026-08-12T12:46:32.128097374Z INFO:aiogram.event:Update id=81060152 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:49:42.495603582Z 2026-08-12 15:49:42.495 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T12:49:42.495654521Z 🇺🇸/🇺🇦 USD: 44.83/44.90 білий 
+telegram_bot  | 2026-08-12T12:49:42.495660483Z 🇺🇸/🇺🇦 USD: 44.95/45.02 синій 💙 
+telegram_bot  | 2026-08-12T12:49:42.495665021Z 🇪🇺/🇺🇦 EUR: 51.80/51.90
+telegram_bot  | 2026-08-12T12:49:42.495668939Z 
+telegram_bot  | 2026-08-12T12:49:42.495687605Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T12:49:42.495692264Z 🇺🇸/🇪🇺 $/€: 1.153/1.157 білий 
+telegram_bot  | 2026-08-12T12:49:42.495696462Z 🇺🇸/🇪🇺 $/€: 1.150/1.154 синий 💙
+telegram_bot  | 2026-08-12T12:49:42.495700640Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T12:49:42.495704779Z 🇺🇸/🇨🇭 $/₣: 1.225/1.235
+telegram_bot  | 2026-08-12T12:49:42.495708747Z  
+telegram_bot  | 2026-08-12T12:49:42.495712674Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T12:49:42.495717183Z 
+telegram_bot  | 2026-08-12T12:49:42.495720920Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T12:49:42.495725088Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T12:49:42.495729046Z 🇨🇭/🇺🇦 CHF: 55.00/55.38
+telegram_bot  | 2026-08-12T12:49:42.495732803Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T12:49:42.495737031Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T12:49:42.495741379Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T12:49:42.495745477Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T12:49:42.495749435Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T12:49:42.495768402Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T12:49:42.495773101Z 
+telegram_bot  | 2026-08-12T12:49:42.495777099Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T12:49:42.495782089Z                                                                             
+telegram_bot  | 2026-08-12T12:49:42.495786177Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T12:49:42.495808340Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T12:49:42.495812308Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T12:49:42.495816165Z                                                                          
+telegram_bot  | 2026-08-12T12:49:42.495820854Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T12:49:42.495825714Z 
+telegram_bot  | 2026-08-12T12:49:42.495829000Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T12:49:42.495832597Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T12:49:42.495851423Z 
+telegram_bot  | 2026-08-12T12:49:42.495855151Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T12:49:42.495858848Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T12:49:42.564163304Z 2026-08-12 15:49:42.563 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T12:49:42.564396717Z 2026-08-12 15:49:42.564 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T12:49:42.564584583Z 2026-08-12 15:49:42.564 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T12:49:42.564795202Z 2026-08-12 15:49:42.564 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.63 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.63 / 44.90</b> білий
+telegram_bot  | 2026-08-12T12:49:42.564803128Z 
+telegram_bot  | 2026-08-12T12:49:42.564985603Z 2026-08-12 15:49:42.564 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.63/44.90
+telegram_bot  | 2026-08-12T12:49:42.565174210Z 2026-08-12 15:49:42.565 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T12:49:42.565723607Z 2026-08-12 15:49:42.565 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T12:49:42.565903728Z 2026-08-12 15:49:42.565 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T12:49:42.566094259Z 2026-08-12 15:49:42.566 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T12:49:42.566101242Z 
+telegram_bot  | 2026-08-12T12:49:42.566298446Z 2026-08-12 15:49:42.566 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T12:49:42.566305289Z 
+telegram_bot  | 2026-08-12T12:49:42.566307643Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T12:49:42.566310058Z 
+telegram_bot  | 2026-08-12T12:49:42.566538361Z 2026-08-12 15:49:42.566 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T12:49:42.566545706Z 
+telegram_bot  | 2026-08-12T12:49:42.566752078Z 2026-08-12 15:49:42.566 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T12:49:42.566758831Z 
+telegram_bot  | 2026-08-12T12:49:42.566949661Z 2026-08-12 15:49:42.566 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T12:49:42.566956194Z 
+telegram_bot  | 2026-08-12T12:49:42.567150952Z 2026-08-12 15:49:42.567 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T12:49:42.567157395Z 
+telegram_bot  | 2026-08-12T12:49:42.567348256Z 2026-08-12 15:49:42.567 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T12:49:42.567354979Z 
+telegram_bot  | 2026-08-12T12:49:42.567568223Z 2026-08-12 15:49:42.567 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T12:49:42.567575278Z 
+telegram_bot  | 2026-08-12T12:49:42.567777140Z 2026-08-12 15:49:42.567 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T12:49:42.567783663Z 
+telegram_bot  | 2026-08-12T12:49:42.567995214Z 2026-08-12 15:49:42.567 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T12:49:42.568001667Z 
+telegram_bot  | 2026-08-12T12:49:42.568344523Z 2026-08-12 15:49:42.568 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T12:49:42.568351066Z 
+telegram_bot  | 2026-08-12T12:49:42.568564882Z 2026-08-12 15:49:42.568 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T12:49:42.568572146Z 
+telegram_bot  | 2026-08-12T12:49:42.568574460Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T12:49:42.568576905Z 
+telegram_bot  | 2026-08-12T12:49:43.134932784Z INFO:aiogram.event:Update id=81060153 is handled. Duration 639 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:56:31.188859419Z 2026-08-12 15:56:31.188 | INFO     | handlers:echo_handler:435 - есть
+telegram_bot  | 2026-08-12T12:56:31.189334392Z INFO:aiogram.event:Update id=81060154 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:56:33.933519937Z 2026-08-12 15:56:33.933 | DEBUG    | handlers:channel_handler:405 - 
+telegram_bot  | 2026-08-12T12:56:33.933929703Z INFO:aiogram.event:Update id=81060155 is handled. Duration 0 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T12:59:51.980039370Z 2026-08-12 15:59:51.979 | INFO     | handlers:echo_handler:435 - скоро будут?
+telegram_bot  | 2026-08-12T12:59:51.980330886Z INFO:aiogram.event:Update id=81060156 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:00:32.500945277Z 2026-08-12 16:00:32.500 | INFO     | handlers:echo_handler:435 - +1000 син*44,95
+telegram_bot  | 2026-08-12T13:00:32.501245862Z 2026-08-12 16:00:32.501 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=1000, currency=usdnew, rate=44.95
+telegram_bot  | 2026-08-12T13:00:32.558031144Z 2026-08-12 16:00:32.557 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T13:00:32.558315026Z INFO:aiogram.event:Update id=81060157 is handled. Duration 58 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:01:34.232669601Z 2026-08-12 16:01:34.232 | INFO     | handlers:echo_handler:435 - -8900
+telegram_bot  | 2026-08-12T13:01:34.233048588Z INFO:aiogram.event:Update id=81060158 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:04:32.262876386Z 2026-08-12 16:04:32.262 | INFO     | handlers:echo_handler:435 - +500 син*44,95
+telegram_bot  | 2026-08-12T13:04:32.263150980Z 2026-08-12 16:04:32.263 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=500, currency=usdnew, rate=44.95
+telegram_bot  | 2026-08-12T13:04:32.322644986Z 2026-08-12 16:04:32.322 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T13:04:32.322900312Z INFO:aiogram.event:Update id=81060159 is handled. Duration 61 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:05:21.186185977Z 2026-08-12 16:05:21.185 | INFO     | handlers:echo_handler:435 - ветхие 50ев-10%. доход 5 евро
+telegram_bot  | 2026-08-12T13:05:21.186217459Z INFO:aiogram.event:Update id=81060160 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:06:24.184226636Z 2026-08-12 16:06:24.184 | INFO     | handlers:echo_handler:435 - ему же заменить 1000 б/с*0,17 говорит
+telegram_bot  | 2026-08-12T13:06:24.184526158Z INFO:aiogram.event:Update id=81060161 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:06:36.016331594Z 2026-08-12 16:06:36.016 | INFO     | handlers:echo_handler:435 - ок
+telegram_bot  | 2026-08-12T13:06:36.016625285Z INFO:aiogram.event:Update id=81060162 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:09:30.237401760Z 2026-08-12 16:09:30.237 | INFO     | handlers:echo_handler:435 - касса до 17.  успеют привезти?
+telegram_bot  | 2026-08-12T13:09:30.237863938Z INFO:aiogram.event:Update id=81060163 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:09:38.655733577Z 2026-08-12 16:09:38.655 | INFO     | handlers:echo_handler:435 - мин 15
+telegram_bot  | 2026-08-12T13:09:38.655752613Z INFO:aiogram.event:Update id=81060164 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:15:30.738718674Z 2026-08-12 16:15:30.738 | INFO     | handlers:echo_handler:435 - 25000$ синие по 44.97 купить,
+telegram_bot  | 2026-08-12T13:15:30.738770545Z 25000€ по 51.82 купить, руслан
+telegram_bot  | 2026-08-12T13:15:30.739024127Z INFO:aiogram.event:Update id=81060165 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:15:51.616881875Z 2026-08-12 16:15:51.616 | INFO     | handlers:echo_handler:435 - ещё чех 
+telegram_bot  | 2026-08-12T13:15:51.616951611Z 10$ б/с 17 коп меняем
+telegram_bot  | 2026-08-12T13:15:51.617307683Z INFO:aiogram.event:Update id=81060166 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:25:57.643521112Z 2026-08-12 16:25:57.642 | INFO     | handlers:echo_handler:435 - +2400 син*44,95
+telegram_bot  | 2026-08-12T13:25:57.643576049Z 2026-08-12 16:25:57.642 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=2400, currency=usdnew, rate=44.95
+telegram_bot  | 2026-08-12T13:25:57.698540439Z 2026-08-12 16:25:57.698 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T13:25:57.698819201Z INFO:aiogram.event:Update id=81060167 is handled. Duration 57 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:27:41.090791726Z 2026-08-12 16:27:41.090 | INFO     | handlers:echo_handler:435 - +5000 син*44,95
+telegram_bot  | 2026-08-12T13:27:41.091068785Z 2026-08-12 16:27:41.090 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=5000, currency=usdnew, rate=44.95
+telegram_bot  | 2026-08-12T13:27:41.144186163Z 2026-08-12 16:27:41.143 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T13:27:41.144460866Z INFO:aiogram.event:Update id=81060168 is handled. Duration 54 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:29:39.953083366Z 2026-08-12 16:29:39.952 | INFO     | handlers:echo_handler:435 - ок
+telegram_bot  | 2026-08-12T13:29:39.953424589Z INFO:aiogram.event:Update id=81060169 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:29:59.697134853Z 2026-08-12 16:29:59.696 | INFO     | handlers:echo_handler:435 - +2000 син*44,95
+telegram_bot  | 2026-08-12T13:29:59.697540781Z 2026-08-12 16:29:59.697 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=2000, currency=usdnew, rate=44.95
+telegram_bot  | 2026-08-12T13:29:59.765015678Z 2026-08-12 16:29:59.764 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T13:29:59.765433189Z INFO:aiogram.event:Update id=81060170 is handled. Duration 70 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:31:21.028932061Z 2026-08-12 16:31:21.028 | INFO     | handlers:echo_handler:435 - +500 грн проверка
+telegram_bot  | 2026-08-12T13:31:21.029357498Z INFO:aiogram.event:Update id=81060171 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:34:26.105230340Z 2026-08-12 16:34:26.104 | INFO     | handlers:echo_handler:435 - это тест?
+telegram_bot  | 2026-08-12T13:34:26.105633012Z INFO:aiogram.event:Update id=81060172 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:34:32.290329903Z 2026-08-12 16:34:32.289 | INFO     | handlers:echo_handler:435 - да
+telegram_bot  | 2026-08-12T13:34:32.290824023Z INFO:aiogram.event:Update id=81060173 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:34:50.677848912Z 2026-08-12 16:34:50.677 | INFO     | handlers:echo_handler:435 - а то я уже позвонить хотел, не успел номер вести
+telegram_bot  | 2026-08-12T13:34:50.678446923Z INFO:aiogram.event:Update id=81060174 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:39:25.300262606Z 2026-08-12 16:39:25.299 | INFO     | handlers:echo_handler:435 - 22300$ синие по 44.96 купить, вячеслав
+telegram_bot  | 2026-08-12T13:39:25.300715636Z INFO:aiogram.event:Update id=81060175 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:40:24.337045341Z 2026-08-12 16:40:24.336 | INFO     | handlers:echo_handler:435 - был ?
+telegram_bot  | 2026-08-12T13:40:24.337445999Z INFO:aiogram.event:Update id=81060176 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:40:50.722615190Z 2026-08-12 16:40:50.722 | DEBUG    | handlers:channel_handler:405 - 
+telegram_bot  | 2026-08-12T13:40:50.723049894Z INFO:aiogram.event:Update id=81060177 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:41:44.580257684Z 2026-08-12 16:41:44.579 | INFO     | handlers:echo_handler:435 - 524 дол ветхий заменить на нормальный, лена, договор с виталиком
+telegram_bot  | 2026-08-12T13:41:44.580711516Z INFO:aiogram.event:Update id=81060178 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:42:11.412851448Z 2026-08-12 16:42:11.412 | INFO     | handlers:echo_handler:435 - -15%?
+telegram_bot  | 2026-08-12T13:42:11.413139417Z INFO:aiogram.event:Update id=81060179 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:43:08.584093094Z 2026-08-12 16:43:08.583 | INFO     | handlers:echo_handler:435 - лёна
+telegram_bot  | 2026-08-12T13:43:08.584418996Z INFO:aiogram.event:Update id=81060180 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:43:13.566386828Z 2026-08-12 16:43:13.565 | INFO     | handlers:echo_handler:435 - да если подходит
+telegram_bot  | 2026-08-12T13:43:13.566405705Z INFO:aiogram.event:Update id=81060181 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:45:36.321874244Z 2026-08-12 16:45:36.321 | INFO     | handlers:echo_handler:435 - замена 524 дол (-15%)
+telegram_bot  | 2026-08-12T13:45:36.322164367Z INFO:aiogram.event:Update id=81060182 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:45:57.351940944Z 2026-08-12 16:45:57.351 | INFO     | handlers:echo_handler:435 - 100$ на мелкие
+telegram_bot  | 2026-08-12T13:45:57.351978237Z INFO:aiogram.event:Update id=81060183 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:46:14.516510860Z 2026-08-12 16:46:14.516 | INFO     | handlers:echo_handler:435 - да
+telegram_bot  | 2026-08-12T13:46:14.516531721Z INFO:aiogram.event:Update id=81060184 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:48:04.186623733Z 2026-08-12 16:48:04.186 | INFO     | handlers:echo_handler:435 - +22500дол и +23650 ев
+telegram_bot  | 2026-08-12T13:48:04.186928926Z INFO:aiogram.event:Update id=81060185 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:50:03.895393784Z 2026-08-12 16:50:03.895 | INFO     | handlers:echo_handler:435 - евро купюра ?
+telegram_bot  | 2026-08-12T13:50:03.895880139Z INFO:aiogram.event:Update id=81060186 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:50:26.005791173Z 2026-08-12 16:50:26.005 | INFO     | handlers:echo_handler:435 - в основном по 50.
+telegram_bot  | 2026-08-12T13:50:26.006067709Z INFO:aiogram.event:Update id=81060187 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:51:14.532343329Z 2026-08-12 16:51:14.531 | INFO     | handlers:echo_handler:435 - 1200 по 200
+telegram_bot  | 2026-08-12T13:51:14.532364099Z 3500 по 100 нов
+telegram_bot  | 2026-08-12T13:51:14.532367476Z 2500 по 100 стар
+telegram_bot  | 2026-08-12T13:51:14.532370241Z INFO:aiogram.event:Update id=81060188 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:52:08.153275141Z 2026-08-12 16:52:08.152 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T13:52:08.153305420Z 🇺🇸/🇺🇦 USD: 44.83/44.90 білий 
+telegram_bot  | 2026-08-12T13:52:08.153308656Z 🇺🇸/🇺🇦 USD: 44.95/45.02 синій 💙 
+telegram_bot  | 2026-08-12T13:52:08.153370716Z 🇪🇺/🇺🇦 EUR: 51.78/51.87
+telegram_bot  | 2026-08-12T13:52:08.153373602Z 
+telegram_bot  | 2026-08-12T13:52:08.153376047Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T13:52:08.153378411Z 🇺🇸/🇪🇺 $/€: 1.1535/1.156 білий 
+telegram_bot  | 2026-08-12T13:52:08.153380726Z 🇺🇸/🇪🇺 $/€: 1.151/1.154 синий 💙
+telegram_bot  | 2026-08-12T13:52:08.153382980Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T13:52:08.153385234Z 🇺🇸/🇨🇭 $/₣: 1.225/1.235
+telegram_bot  | 2026-08-12T13:52:08.153387419Z  
+telegram_bot  | 2026-08-12T13:52:08.153389563Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T13:52:08.153392069Z 
+telegram_bot  | 2026-08-12T13:52:08.153394163Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T13:52:08.153396397Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T13:52:08.153398641Z 🇨🇭/🇺🇦 CHF: 55.00/55.38
+telegram_bot  | 2026-08-12T13:52:08.153400775Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T13:52:08.153402949Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T13:52:08.153405244Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T13:52:08.153407478Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T13:52:08.153409652Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T13:52:08.153411897Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T13:52:08.153414251Z 
+telegram_bot  | 2026-08-12T13:52:08.153417407Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T13:52:08.153421796Z                                                                             
+telegram_bot  | 2026-08-12T13:52:08.153425723Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T13:52:08.153429120Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T13:52:08.153432977Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T13:52:08.153446864Z                                                                          
+telegram_bot  | 2026-08-12T13:52:08.153450262Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T13:52:08.153459890Z 
+telegram_bot  | 2026-08-12T13:52:08.153462144Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T13:52:08.153464479Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T13:52:08.153466713Z 
+telegram_bot  | 2026-08-12T13:52:08.153468787Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T13:52:08.153471102Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T13:52:08.214287842Z 2026-08-12 16:52:08.214 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T13:52:08.214534451Z 2026-08-12 16:52:08.214 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T13:52:08.214726434Z 2026-08-12 16:52:08.214 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T13:52:08.215417035Z 2026-08-12 16:52:08.215 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.63 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.63 / 44.90</b> білий
+telegram_bot  | 2026-08-12T13:52:08.215425501Z 
+telegram_bot  | 2026-08-12T13:52:08.215610431Z 2026-08-12 16:52:08.215 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.63/44.90
+telegram_bot  | 2026-08-12T13:52:08.215798666Z 2026-08-12 16:52:08.215 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T13:52:08.215977794Z 2026-08-12 16:52:08.215 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T13:52:08.216154046Z 2026-08-12 16:52:08.216 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T13:52:08.216350959Z 2026-08-12 16:52:08.216 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T13:52:08.216358824Z 
+telegram_bot  | 2026-08-12T13:52:08.216570716Z 2026-08-12 16:52:08.216 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T13:52:08.216577830Z 
+telegram_bot  | 2026-08-12T13:52:08.216580285Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T13:52:08.216582769Z 
+telegram_bot  | 2026-08-12T13:52:08.216803107Z 2026-08-12 16:52:08.216 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T13:52:08.216810852Z 
+telegram_bot  | 2026-08-12T13:52:08.217006893Z 2026-08-12 16:52:08.216 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T13:52:08.217013486Z 
+telegram_bot  | 2026-08-12T13:52:08.217207122Z 2026-08-12 16:52:08.217 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T13:52:08.217213775Z 
+telegram_bot  | 2026-08-12T13:52:08.217418834Z 2026-08-12 16:52:08.217 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T13:52:08.217439233Z 
+telegram_bot  | 2026-08-12T13:52:08.217641606Z 2026-08-12 16:52:08.217 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T13:52:08.217650183Z 
+telegram_bot  | 2026-08-12T13:52:08.217851613Z 2026-08-12 16:52:08.217 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T13:52:08.217858758Z 
+telegram_bot  | 2026-08-12T13:52:08.218050059Z 2026-08-12 16:52:08.217 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T13:52:08.218056492Z 
+telegram_bot  | 2026-08-12T13:52:08.218269055Z 2026-08-12 16:52:08.218 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T13:52:08.218275477Z 
+telegram_bot  | 2026-08-12T13:52:08.218657189Z 2026-08-12 16:52:08.218 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T13:52:08.218666407Z 
+telegram_bot  | 2026-08-12T13:52:08.218861786Z 2026-08-12 16:52:08.218 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T13:52:08.218868439Z 
+telegram_bot  | 2026-08-12T13:52:08.218870784Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T13:52:08.218873179Z 
+telegram_bot  | 2026-08-12T13:52:08.762730310Z INFO:aiogram.event:Update id=81060189 is handled. Duration 609 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:52:50.662398829Z 2026-08-12 16:52:50.662 | INFO     | handlers:echo_handler:435 - есть, доход (+1700 грн.)
+telegram_bot  | 2026-08-12T13:52:50.662679434Z INFO:aiogram.event:Update id=81060190 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:54:51.308243742Z 2026-08-12 16:54:51.308 | DEBUG    | handlers:channel_handler:405 - 
+telegram_bot  | 2026-08-12T13:54:51.308528084Z INFO:aiogram.event:Update id=81060191 is handled. Duration 0 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T13:54:59.033386263Z 2026-08-12 16:54:59.033 | INFO     | handlers:echo_handler:435 - ветхие 200дол-5%. доход 10дол
+telegram_bot  | 2026-08-12T13:54:59.033808454Z INFO:aiogram.event:Update id=81060192 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T14:06:57.007053500Z 2026-08-12 17:06:57.006 | INFO     | handlers:echo_handler:435 - да
+telegram_bot  | 2026-08-12T14:06:57.007072547Z INFO:aiogram.event:Update id=81060193 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T14:13:18.353712744Z 2026-08-12 17:13:18.353 | INFO     | handlers:echo_handler:435 - купила
+telegram_bot  | 2026-08-12T14:13:18.354003208Z INFO:aiogram.event:Update id=81060194 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T14:19:30.022381930Z 2026-08-12 17:19:30.021 | INFO     | handlers:echo_handler:435 - +1000 син*44,95
+telegram_bot  | 2026-08-12T14:19:30.022732231Z 2026-08-12 17:19:30.022 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=1000, currency=usdnew, rate=44.95
+telegram_bot  | 2026-08-12T14:19:30.089351267Z 2026-08-12 17:19:30.088 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T14:19:30.089784748Z INFO:aiogram.event:Update id=81060195 is handled. Duration 68 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T14:19:53.279783593Z 2026-08-12 17:19:53.279 | INFO     | handlers:echo_handler:435 - ок
+telegram_bot  | 2026-08-12T14:19:53.280064759Z INFO:aiogram.event:Update id=81060196 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T14:27:12.609551725Z 2026-08-12 17:27:12.609 | INFO     | handlers:echo_handler:435 - забыла написать . замена 1000 дол б/с*0,17 (+170 грн.)
+telegram_bot  | 2026-08-12T14:27:12.609842479Z INFO:aiogram.event:Update id=81060197 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T14:28:03.927419037Z 2026-08-12 17:28:03.927 | DEBUG    | handlers:channel_handler:405 - 
+telegram_bot  | 2026-08-12T14:28:03.927782694Z INFO:aiogram.event:Update id=81060198 is handled. Duration 0 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T14:48:45.022830111Z 2026-08-12 17:48:45.022 | INFO     | handlers:echo_handler:435 - 9500$ синие по 45.02 п, сергей
+telegram_bot  | 2026-08-12T14:48:45.022854038Z INFO:aiogram.event:Update id=81060199 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T14:57:19.856761066Z 2026-08-12 17:57:19.856 | INFO     | handlers:echo_handler:435 - +500 син*44,95
+telegram_bot  | 2026-08-12T14:57:19.857041050Z 2026-08-12 17:57:19.856 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=500, currency=usdnew, rate=44.95
+telegram_bot  | 2026-08-12T14:57:19.912272802Z 2026-08-12 17:57:19.912 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T14:57:19.912546634Z INFO:aiogram.event:Update id=81060200 is handled. Duration 57 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T15:02:06.736348629Z 2026-08-12 18:02:06.735 | INFO     | handlers:echo_handler:435 - ветхие 100дол-5%. доход 5дол
+telegram_bot  | 2026-08-12T15:02:06.736817950Z INFO:aiogram.event:Update id=81060201 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T15:06:14.741803576Z 2026-08-12 18:06:14.741 | INFO     | handlers:echo_handler:435 - +500 б*44,83
+telegram_bot  | 2026-08-12T15:06:14.742158776Z 2026-08-12 18:06:14.742 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=500, currency=usd, rate=44.83
+telegram_bot  | 2026-08-12T15:06:14.977850718Z 2026-08-12 18:06:14.977 | DEBUG    | handlers:echo_handler:493 - ✅ ОК, отличная покупка
+telegram_bot  | 2026-08-12T15:06:14.978325420Z INFO:aiogram.event:Update id=81060202 is handled. Duration 238 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T15:18:16.006589019Z 2026-08-12 18:18:16.006 | DEBUG    | handlers:channel_handler:405 - Курс від 500 $/€/£/₣
+telegram_bot  | 2026-08-12T15:18:16.006662943Z 🇺🇸/🇺🇦 USD: 44.83/44.90 білий 
+telegram_bot  | 2026-08-12T15:18:16.006668203Z 🇺🇸/🇺🇦 USD: 44.95/45.02 синій 💙 
+telegram_bot  | 2026-08-12T15:18:16.006672351Z 🇪🇺/🇺🇦 EUR: 51.78/51.87
+telegram_bot  | 2026-08-12T15:18:16.006675878Z 
+telegram_bot  | 2026-08-12T15:18:16.006690577Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T15:18:16.006693422Z 🇺🇸/🇪🇺 $/€: 1.1535/1.156 білий 
+telegram_bot  | 2026-08-12T15:18:16.006696298Z 🇺🇸/🇪🇺 $/€: 1.151/1.154 синий 💙
+telegram_bot  | 2026-08-12T15:18:16.006735775Z 🇺🇸/🇬🇧 $/£: 1.330/1.345
+telegram_bot  | 2026-08-12T15:18:16.006738189Z 🇺🇸/🇨🇭 $/₣: 1.225/1.235
+telegram_bot  | 2026-08-12T15:18:16.006740594Z  
+telegram_bot  | 2026-08-12T15:18:16.006742798Z Обмін Синій 💙 / бiлий 🤍 +10/+17 ГРН ЗА КУПЮРУ
+telegram_bot  | 2026-08-12T15:18:16.006745293Z 
+telegram_bot  | 2026-08-12T15:18:16.006747387Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T15:18:16.006749862Z 🇬🇧/🇺🇦 GBP: 59.80/60.20
+telegram_bot  | 2026-08-12T15:18:16.006752036Z 🇨🇭/🇺🇦 CHF: 55.00/55.38
+telegram_bot  | 2026-08-12T15:18:16.006754381Z 🇵🇱/🇺🇦 PLN: 11.87/11.95
+telegram_bot  | 2026-08-12T15:18:16.006765973Z 🇷🇴/🇺🇦 RON: 9.75/9.95                                                            
+telegram_bot  | 2026-08-12T15:18:16.006768618Z 🇲🇩/🇺🇦 MLD: 2.50/2.59                                       
+telegram_bot  | 2026-08-12T15:18:16.006770892Z 🇨🇦/🇺🇦 CAD: 31.45/31.80
+telegram_bot  | 2026-08-12T15:18:16.006773057Z 🇳🇴/🇺🇦 NOK: 4.00/4.40                                              
+telegram_bot  | 2026-08-12T15:18:16.006775301Z 🥇 🇺🇸 GOLD 137.5/143.5 $/g
+telegram_bot  | 2026-08-12T15:18:16.006777715Z 
+telegram_bot  | 2026-08-12T15:18:16.006779930Z Приймаємо зношенi купюри з min %                                                                                                                                                                                                                                                
+telegram_bot  | 2026-08-12T15:18:16.006783106Z                                                                             
+telegram_bot  | 2026-08-12T15:18:16.006785380Z Також працюємо з iншими валютами:                                       
+telegram_bot  | 2026-08-12T15:18:16.006788005Z AUD, TRY, CZK, ILS, CNY, HUF, BGN                                                                           
+telegram_bot  | 2026-08-12T15:18:16.006790361Z  🇦🇺    🇹🇷   🇨🇿   🇮🇱  🇨🇳    🇭🇺   🇧🇬   та  інші
+telegram_bot  | 2026-08-12T15:18:16.006792976Z                                                                          
+telegram_bot  | 2026-08-12T15:18:16.006796793Z На купюри номіналом 1, 2, 5, 10, 20, 50 $, 1996 і 1999 рік оптовий курс не діє                                                                                                                                                                                                                                                                                                                              
+telegram_bot  | 2026-08-12T15:18:16.006800120Z 
+telegram_bot  | 2026-08-12T15:18:16.006802204Z ОПТ(від 500 $€) менеджер 
+telegram_bot  | 2026-08-12T15:18:16.006804498Z 📲 0967228090  @PrivatObmenOd
+telegram_bot  | 2026-08-12T15:18:16.006806702Z 
+telegram_bot  | 2026-08-12T15:18:16.006808967Z ОПТ(від 10т $€) менеджер 
+telegram_bot  | 2026-08-12T15:18:16.006811271Z 📲 0634765088  @VitalikPrivat
+telegram_bot  | 2026-08-12T15:18:16.078443582Z 2026-08-12 18:18:16.078 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T15:18:16.079192877Z 2026-08-12 18:18:16.079 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T15:18:16.079377336Z 2026-08-12 18:18:16.079 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T15:18:16.079580059Z 2026-08-12 18:18:16.079 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd 44.63 44.90 - 1 🇺🇸 🇺🇦 <b>USD 44.63 / 44.90</b> білий
+telegram_bot  | 2026-08-12T15:18:16.079587824Z 
+telegram_bot  | 2026-08-12T15:18:16.079770569Z 2026-08-12 18:18:16.079 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.63/44.90
+telegram_bot  | 2026-08-12T15:18:16.079954888Z 2026-08-12 18:18:16.079 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T15:18:16.080137783Z 2026-08-12 18:18:16.080 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T15:18:16.080351768Z 2026-08-12 18:18:16.080 | DEBUG    | functions.all_fun:update_currency_usd:192 - USD без изменений: 44.83/44.90
+telegram_bot  | 2026-08-12T15:18:16.080541978Z 2026-08-12 18:18:16.080 | DEBUG    | functions.all_fun:update_currency_usd:180 - usdnew 44.72 45.02 - 2 🇺🇸 🇺🇦 <b>USD 44.72 / 45.02</b> синій 💙
+telegram_bot  | 2026-08-12T15:18:16.080549051Z 
+telegram_bot  | 2026-08-12T15:18:16.080779419Z 2026-08-12 18:18:16.080 | DEBUG    | functions.all_fun:update_currency_usd:180 - eur 51.57 51.90 - 3 🇪🇺 🇺🇦 <b>EUR 51.57 / 51.90</b>
+telegram_bot  | 2026-08-12T15:18:16.080788757Z 
+telegram_bot  | 2026-08-12T15:18:16.080792073Z 💱Крос - курс:
+telegram_bot  | 2026-08-12T15:18:16.080795780Z 
+telegram_bot  | 2026-08-12T15:18:16.081008914Z 2026-08-12 18:18:16.080 | DEBUG    | functions.all_fun:update_currency_usd:180 - usd-eur 1.1535 1.1550 - 3 🇺🇸 🇪🇺 $/€ 1.1535 / 1.1550
+telegram_bot  | 2026-08-12T15:18:16.081015998Z 
+telegram_bot  | 2026-08-12T15:18:16.081220656Z 2026-08-12 18:18:16.081 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp 59.80 60.20 - 5 🇬🇧 🇺🇦 GBP: 59.80 / 60.20
+telegram_bot  | 2026-08-12T15:18:16.081227870Z 
+telegram_bot  | 2026-08-12T15:18:16.081422998Z 2026-08-12 18:18:16.081 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf 55.10 55.38 - 6 🇨🇭 🇺🇦 CHF: 55.10 / 55.38
+telegram_bot  | 2026-08-12T15:18:16.081429751Z 
+telegram_bot  | 2026-08-12T15:18:16.081626564Z 2026-08-12 18:18:16.081 | DEBUG    | functions.all_fun:update_currency_usd:180 - pln 11.87 11.95 - 6 🇵🇱 🇺🇦 PLN: 11.87 / 11.95
+telegram_bot  | 2026-08-12T15:18:16.081634930Z 
+telegram_bot  | 2026-08-12T15:18:16.081843004Z 2026-08-12 18:18:16.081 | DEBUG    | functions.all_fun:update_currency_usd:180 - cad 31.40 31.90 - 12 🇨🇦 🇺🇦 CAD: 31.40 / 31.90
+telegram_bot  | 2026-08-12T15:18:16.081850969Z 
+telegram_bot  | 2026-08-12T15:18:16.082046139Z 2026-08-12 18:18:16.081 | DEBUG    | functions.all_fun:update_currency_usd:180 - ron 9.80 9.95 - 7 🇷🇴 🇺🇦 RON: 9.80 / 9.95
+telegram_bot  | 2026-08-12T15:18:16.082053433Z 
+telegram_bot  | 2026-08-12T15:18:16.082250214Z 2026-08-12 18:18:16.082 | DEBUG    | functions.all_fun:update_currency_usd:180 - mdl 2.50 2.59 - 8 🇲🇩 🇺🇦 MLD: 2.50 / 2.59
+telegram_bot  | 2026-08-12T15:18:16.082262629Z 
+telegram_bot  | 2026-08-12T15:18:16.082476243Z 2026-08-12 18:18:16.082 | DEBUG    | functions.all_fun:update_currency_usd:180 - nok 4.00 4.38 - 13 🇳🇴 🇺🇦 NOK: 4.00 / 4.38
+telegram_bot  | 2026-08-12T15:18:16.082482856Z 
+telegram_bot  | 2026-08-12T15:18:16.082844940Z 2026-08-12 18:18:16.082 | DEBUG    | functions.all_fun:update_currency_usd:180 - chf-usd 1.2290 1.2340 - 4 🇺🇸 🇨🇭 $/₣ 1.2290 / 1.2340
+telegram_bot  | 2026-08-12T15:18:16.082853106Z 
+telegram_bot  | 2026-08-12T15:18:16.083050729Z 2026-08-12 18:18:16.082 | DEBUG    | functions.all_fun:update_currency_usd:180 - gbp-usd 1.3300 1.3450 - 5 🇺🇸 🇬🇧 $/£ 1.3300 / 1.3450
+telegram_bot  | 2026-08-12T15:18:16.083057803Z 
+telegram_bot  | 2026-08-12T15:18:16.083060138Z 🔻 Інші валюти:
+telegram_bot  | 2026-08-12T15:18:16.083062503Z 
+telegram_bot  | 2026-08-12T15:18:16.613078914Z INFO:aiogram.event:Update id=81060203 is handled. Duration 606 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T15:40:32.751287623Z 2026-08-12 18:40:32.751 | INFO     | handlers:echo_handler:435 - бунина
+telegram_bot  | 2026-08-12T15:40:32.751324063Z 50т$ синие по 44.95 купить, кабан
+telegram_bot  | 2026-08-12T15:40:32.751565663Z INFO:aiogram.event:Update id=81060204 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T15:40:47.829176160Z 2026-08-12 18:40:47.828 | INFO     | handlers:echo_handler:435 - грн хватает?
+telegram_bot  | 2026-08-12T15:40:47.829608249Z INFO:aiogram.event:Update id=81060205 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T15:41:58.890061207Z 2026-08-12 18:41:58.889 | INFO     | handlers:echo_handler:435 - хватит
+telegram_bot  | 2026-08-12T15:41:58.890502975Z INFO:aiogram.event:Update id=81060206 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T15:50:05.965606515Z 2026-08-12 18:50:05.965 | INFO     | handlers:echo_handler:435 - +1000 син*44,95
+telegram_bot  | 2026-08-12T15:50:05.965689456Z 2026-08-12 18:50:05.965 | DEBUG    | handlers:echo_handler:459 - Parsed → amount=1000, currency=usdnew, rate=44.95
+telegram_bot  | 2026-08-12T15:50:06.021523662Z 2026-08-12 18:50:06.021 | DEBUG    | handlers:echo_handler:498 - ❌ Нет, Покупка: 44.92
+telegram_bot  | 2026-08-12T15:50:06.021788356Z INFO:aiogram.event:Update id=81060207 is handled. Duration 57 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T15:55:59.077402207Z 2026-08-12 18:55:59.077 | INFO     | handlers:echo_handler:435 - продала
+telegram_bot  | 2026-08-12T15:55:59.077688563Z INFO:aiogram.event:Update id=81060208 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T15:56:31.254146084Z 2026-08-12 18:56:31.253 | INFO     | handlers:echo_handler:435 - купила)
+telegram_bot  | 2026-08-12T15:56:31.254538697Z INFO:aiogram.event:Update id=81060209 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T15:56:56.666927479Z 2026-08-12 18:56:56.666 | INFO     | handlers:echo_handler:435 - продаю
+telegram_bot  | 2026-08-12T15:56:56.667206611Z INFO:aiogram.event:Update id=81060210 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T15:57:01.070889476Z 2026-08-12 18:57:01.070 | INFO     | handlers:echo_handler:435 - точно,исправила
+telegram_bot  | 2026-08-12T15:57:01.071193938Z INFO:aiogram.event:Update id=81060211 is handled. Duration 1 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T16:16:17.808614267Z 2026-08-12 19:16:17.808 | INFO     | handlers:echo_handler:435 - 1000$ синие по 45.02 продать, алина
+telegram_bot  | 2026-08-12T16:16:17.809028702Z INFO:aiogram.event:Update id=81060212 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T16:20:59.810746135Z 2026-08-12 19:20:59.810 | INFO     | handlers:echo_handler:435 - передумала $
+telegram_bot  | 2026-08-12T16:20:59.810799218Z 900€ по 51.57 продать
+telegram_bot  | 2026-08-12T16:20:59.811140471Z INFO:aiogram.event:Update id=81060213 is handled. Duration 2 ms by bot id=8097135106
+telegram_bot  | 2026-08-12T16:25:06.908782933Z 2026-08-12 19:25:06.908 | INFO     | handlers:echo_handler:435 - есть
+telegram_bot  | 2026-08-12T16:25:06.909082014Z INFO:aiogram.event:Update id=81060214 is handled. Duration 1 ms by bot id=8097135106

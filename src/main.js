@@ -5,6 +5,8 @@ const titleResults = document.getElementById("title_results");
 const favoriteRecipes = document.querySelector(".favoriteRecipes");
 const container = document.querySelector(".container");
 
+
+
 let minSumVolue = 100
 let itemTab = "buy"
 let selle_or_buy = itemTab=="buy" ? true : false
@@ -108,8 +110,9 @@ const renderList = (data) => {
 const handleSubmit = async (e) => {
 	e.preventDefault()
 	// const response = await fetch(process.env.API_URL)
-	const response = await fetch('https://swap-rocket-currency-api.onrender.com/api/v1/exchangers/')
+	const response = await fetch('https://private-api-amk6.onrender.com/api/v1/currencys/?currency=1')
 	const data = await response.json()
+  
   const cur_value = itemTab
   const amount = e.target.querySelector('input[type="number"]').value;
 	const currency = e.target.querySelector("select").value;
